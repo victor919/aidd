@@ -1,0 +1,146 @@
+{
+  "box": {
+    "true_center": [
+      22.014,
+      0.253,
+      52.794
+    ],
+    "hard_coded_center": [
+      12.5,
+      -8.3,
+      24.1
+    ],
+    "center_distance": 31.42,
+    "ligand_atoms": 29,
+    "ligand_atoms_in_hard_box": 0,
+    "ligand_atoms_in_true_box": 29,
+    "pocket_residues_total": 20,
+    "pocket_residues_in_hard_box": 0,
+    "pocket_residues_in_true_box": 19,
+    "protein_atoms_in_hard_box": 0,
+    "protein_atoms_in_true_box": 295
+  },
+  "demo_library": {
+    "rows": [
+      {
+        "name": "Aspirin（伪代码 demo）",
+        "group": "demo",
+        "smiles": "CC(=O)Oc1ccccc1C(=O)O",
+        "pred_pIC50": 5.15,
+        "MW": 180.2,
+        "logP": 1.31,
+        "QED": 0.55
+      },
+      {
+        "name": "Caffeine（伪代码 demo）",
+        "group": "demo",
+        "smiles": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
+        "pred_pIC50": 5.28,
+        "MW": 194.2,
+        "logP": -1.03,
+        "QED": 0.538
+      },
+      {
+        "name": "Ibuprofen（伪代码 demo）",
+        "group": "demo",
+        "smiles": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O",
+        "pred_pIC50": 4.89,
+        "MW": 206.3,
+        "logP": 3.07,
+        "QED": 0.822
+      },
+      {
+        "name": "Erlotinib（ChEMBL API (pref_name=ERLOTINIB)）",
+        "group": "real",
+        "smiles": "C#Cc1cccc(Nc2ncnc3cc(OCCOC)c(OCCOC)cc23)c1",
+        "pred_pIC50": 7.72,
+        "MW": 393.4,
+        "logP": 3.41,
+        "QED": 0.418
+      },
+      {
+        "name": "数据集真实高分 #1",
+        "group": "real",
+        "smiles": "Cn1cnc2cc3ncnc(Nc4cccc(Br)c4)c3cc21",
+        "pred_pIC50": 10.03,
+        "true_pIC50": 11.0,
+        "MW": 354.2,
+        "logP": 4.02,
+        "QED": 0.591
+      },
+      {
+        "name": "数据集真实高分 #2",
+        "group": "real",
+        "smiles": "Cn1cnc2cc3c(Nc4cccc(Br)c4)ncnc3cc21",
+        "pred_pIC50": 9.72,
+        "true_pIC50": 10.6,
+        "MW": 354.2,
+        "logP": 4.02,
+        "QED": 0.591
+      },
+      {
+        "name": "数据集真实高分 #3",
+        "group": "real",
+        "smiles": "COc1cc2ncnc(Nc3cccc(Cl)c3F)c2cc1N1CC2(CN(C)C2)OC1=O",
+        "pred_pIC50": 10.42,
+        "true_pIC50": 10.54,
+        "MW": 443.9,
+        "logP": 3.82,
+        "QED": 0.656
+      }
+    ],
+    "erlotinib_source": "ChEMBL API (pref_name=ERLOTINIB)",
+    "demo_pass_MW500": true,
+    "demo_pass_QED05": true,
+    "demo_pred_mean": 5.11,
+    "demo_pred_max": 5.28,
+    "dataset_activity_threshold_pIC50_7_rate": 0.5201
+  },
+  "sascore": {
+    "n": 10468,
+    "mean": 3.02,
+    "median": 3,
+    "max": 8.48,
+    "min": 1.45,
+    "pass_le_4_5": 0.9563,
+    "pass_le_6_0": 0.9996,
+    "spearman_sa_vs_pIC50": 0.2822,
+    "strong_mean_sa": 3.32,
+    "weak_mean_sa": 2.85,
+    "strong_n": 2608,
+    "weak_n": 5024,
+    "funnel": {
+      "activity_min": 7.0,
+      "n_active": 5444,
+      "n_active_and_SA45": 5139,
+      "n_active_and_SA60": 5444
+    }
+  },
+  "docking": {
+    "n": 30,
+    "pearson_pred_vs_docking": -0.059,
+    "pearson_docking_vs_true": 0.1,
+    "spearman_docking_vs_true": 0.101,
+    "pearson_pred_vs_true": 0.371,
+    "spearman_pred_vs_true": 0.449,
+    "docking_score_range": [
+      -9.56,
+      -7.56
+    ],
+    "true_pIC50_range": [
+      5.55,
+      10.6
+    ],
+    "best_by_dock": {
+      "id": "mol0110",
+      "docking": -9.56,
+      "true_pIC50": 9.0
+    },
+    "best_by_true": {
+      "id": "mol0000",
+      "docking": -8.42,
+      "true_pIC50": 10.6,
+      "docking_rank": 19
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "step1": {
+    "af": "egfr_af_v6.pdb",
+    "crystal": "1M17.pdb"
+  },
+  "step2": {
+    "band_counts": {
+      "very_low": 276,
+      "low": 79,
+      "confident": 282,
+      "very_high": 573
+    },
+    "n_total": 1210,
+    "n_kept_residues": 324,
+    "n_kept_atoms": 2593,
+    "kept_plddt_mean": 79.28,
+    "kept_plddt_median": 86.72,
+    "kept_plddt_min": 33.62
+  },
+  "step3": {
+    "n_protein_atoms": 2593,
+    "n_pockets": 1,
+    "top3": [
+      {
+        "volume_A3": 10191,
+        "mean_buriedness": 11.56,
+        "center": [
+          -5.42,
+          30.22,
+          20.7
+        ]
+      }
+    ]
+  },
+  "step4": {
+    "html": "e6_end2end_view.html"
+  }
+}

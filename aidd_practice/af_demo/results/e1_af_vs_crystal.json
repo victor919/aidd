@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "structure_crystal": "1M17 (X-ray, EGFR kinase domain, co-crystal ligand AQ4=erlotinib)",
+    "structure_predicted": "AF-P00533-F1 (AlphaFold DB v4 model)",
+    "uniprot": "P00533",
+    "numbering_offset_pdb_minus_uniprot": -24,
+    "pocket_cutoff_A": 5.0
+  },
+  "e1_alpha_vs_crystal": {
+    "n_common_residues": 312,
+    "rmsd_ca_global_A": 11.675,
+    "n_pocket_residues_total": 20,
+    "rmsd_ca_pLDDT_ge70_A": 0.86,
+    "n_pLDDT_ge70": 239,
+    "rmsd_ca_pLDDT_lt50_A": 13.069,
+    "n_pLDDT_lt50": 30,
+    "rmsd_iterative_trim": [
+      11.675,
+      1.315,
+      0.516,
+      0.357,
+      0.278,
+      0.223
+    ],
+    "n_pocket_common": 20,
+    "pocket_dev_mean_A": 5.28,
+    "pocket_dev_median_A": 5.447,
+    "pocket_dev_max_A": 6.814,
+    "nonpocket_dev_mean_A": 6.959,
+    "nonpocket_dev_median_A": 4.452,
+    "pocket_internal_distmatrix_rmsd_A": 2.858,
+    "af_model_pocket_residues_found": 0,
+    "af_vs_crystal_pocket_intersection": 0,
+    "af_vs_crystal_pocket_jaccard": 0.0,
+    "worst_pocket_residues": [
+      {
+        "pdb_resnum": 770,
+        "uniprot": 794,
+        "dev_A": 6.814
+      },
+      {
+        "pdb_resnum": 767,
+        "uniprot": 791,
+        "dev_A": 6.476
+      },
+      {
+        "pdb_resnum": 768,
+        "uniprot": 792,
+        "dev_A": 6.408
+      },
+      {
+        "pdb_resnum": 771,
+        "uniprot": 795,
+        "dev_A": 6.333
+      },
+      {
+        "pdb_resnum": 766,
+        "uniprot": 790,
+        "dev_A": 6.163
+      },
+      {
+        "pdb_resnum": 769,
+        "uniprot": 793,
+        "dev_A": 6.142
+      },
+      {
+        "pdb_resnum": 719,
+        "uniprot": 743,
+        "dev_A": 6.084
+      },
+      {
+        "pdb_resnum": 765,
+        "uniprot": 789,
+        "dev_A": 6.0
+      },
+      {
+        "pdb_resnum": 694,
+        "uniprot": 718,
+        "dev_A": 5.586
+      },
+      {
+        "pdb_resnum": 772,
+        "uniprot": 796,
+        "dev_A": 5.52
+      }
+    ]
+  },
+  "e2_plddt_as_pocket_detector": {
+    "n_residues_alpha_model": 1210,
+    "n_residues_crystal": 312,
+    "kinase_domain_plddt": {
+      "n": 324,
+      "mean": 79.28,
+      "median": 86.72,
+      "p10": 45.83,
+      "p90": 96.54,
+      "min": 33.62,
+      "max": 98.19
+    },
+    "outside_kinase_domain_plddt": {
+      "n": 886,
+      "mean": 74.73,
+      "median": 90.25,
+      "p10": 29.39,
+      "p90": 96.72,
+      "min": 23.81,
+      "max": 98.56
+    },
+    "frac_plddt_below_50_whole_model": 0.2281,
+    "frac_plddt_above_90_whole_model": 0.4719,
+    "pocket_plddt": {
+      "n": 20,
+      "mean": 83.65,
+      "median": 85.78,
+      "p10": 76.41,
+      "p90": 89.45,
+      "min": 67.44,
+      "max": 92.62
+    },
+    "nonpocket_plddt": {
+      "n": 292,
+      "mean": 80.46,
+      "median": 87.81,
+      "p10": 48.48,
+      "p90": 96.87,
+      "min": 33.62,
+      "max": 98.19
+    },
+    "whole_model_plddt": {
+      "n": 1210,
+      "mean": 75.95,
+      "median": 89.12,
+      "p10": 31.1,
+      "p90": 96.69,
+      "min": 23.81,
+      "max": 98.56
+    },
+    "topk_precision": {
+      "20": {
+        "hit": 0,
+        "precision": 0.0
+      },
+      "40": {
+        "hit": 0,
+        "precision": 0.0
+      },
+      "60": {
+        "hit": 0,
+        "precision": 0.0
+      },
+      "100": {
+        "hit": 0,
+        "precision": 0.0
+      },
+      "200": {
+        "hit": 0,
+        "precision": 0.0
+      }
+    },
+    "random_baseline_precision": 0.01653,
+    "pocket_residue_pLDDT_ranks": [
+      463,
+      592,
+      597,
+      631,
+      645,
+      651,
+      675,
+      683,
+      688,
+      693,
+      699,
+      706,
+      715,
+      725,
+      791,
+      811,
+      818,
+      819,
+      839,
+      867
+    ],
+    "pocket_residue_pLDDT_percentile": [
+      38.26,
+      48.93,
+      49.34,
+      52.15,
+      53.31,
+      53.8,
+      55.79,
+      56.45,
+      56.86,
+      57.27,
+      57.77,
+      58.35,
+      59.09,
+      59.92,
+      65.37,
+      67.02,
+      67.6,
+      67.69,
+      69.34,
+      71.65
+    ],
+    "note": "precision = 按 pLDDT 降序取前 K 个残基里属于真实口袋(5埃)的比例"
+  }
+}

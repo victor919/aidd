@@ -1,0 +1,58 @@
+{
+  "rmsd_ca_pLDDT_ge70_A": 0.86,
+  "rmsd_ca_all_312_A": 12.72,
+  "n_true_pocket_residues": 20,
+  "pocket_resnums_pdb": [
+    694,
+    695,
+    702,
+    719,
+    721,
+    738,
+    742,
+    764,
+    765,
+    766,
+    767,
+    768,
+    769,
+    770,
+    771,
+    772,
+    773,
+    820,
+    830,
+    831
+  ],
+  "geo_pockets": {
+    "06_pocket_geo_crystal.pdb": {
+      "n_voxel": 7983.0,
+      "n_drawn": 1833,
+      "dcc_to_true_A": 11.04
+    },
+    "07_pocket_geo_AF_full.pdb": {
+      "n_voxel": 26869.0,
+      "n_drawn": 1963,
+      "dcc_to_true_A": 23.19
+    },
+    "08_pocket_geo_AF_kinase.pdb": {
+      "n_voxel": 8924.0,
+      "n_drawn": 1623,
+      "dcc_to_true_A": 10.45
+    }
+  },
+  "files": {
+    "01_AF_P00533_full_plddt.pdb": 760756,
+    "02_AF_superposed_on_1M17.pdb": 760756,
+    "03_1M17_protein.pdb": 203395,
+    "04_1M17_ligand_AQ4.pdb": 2353,
+    "05_pocket_true_20res.pdb": 12721,
+    "06_pocket_geo_crystal.pdb": 144811,
+    "07_pocket_geo_AF_full.pdb": 155081,
+    "08_pocket_geo_AF_kinase.pdb": 128221
+  },
+  "static_png": "AI制药细节篇1_配图/a6_3d_view.png",
+  "interactive_html": "EGFR_AFPocket_3D.html",
+  "html_payload_raw_KB": 1236.7,
+  "html_payload_gzip_KB": 253.6
+}

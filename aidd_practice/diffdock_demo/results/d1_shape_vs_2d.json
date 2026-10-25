@@ -1,0 +1,94 @@
+{
+  "groups": {
+    "A_同系列改取代基": {
+      "desc": "同为 4-苯胺基喹唑啉骨架，只改末端取代基",
+      "mol_a": "erlotinib_erlo",
+      "mol_b": "gefitinib_gefo",
+      "sim_2d_ecfp4": 0.473,
+      "sim_3d_usrcat": 0.1643,
+      "gap_2d_minus_3d": 0.3087,
+      "fingerprint_bits": {
+        "shared": 35,
+        "only_a": 14,
+        "only_b": 25
+      },
+      "descriptors_a": {
+        "heavy_atoms": 28,
+        "mw": 379.15,
+        "rot_bonds": 8,
+        "rings": 3,
+        "on_bits": 49
+      },
+      "descriptors_b": {
+        "heavy_atoms": 31,
+        "mw": 446.15,
+        "rot_bonds": 8,
+        "rings": 4,
+        "on_bits": 60
+      }
+    },
+    "B_骨架跃迁": {
+      "desc": "核心骨架已换，但药效团（喹唑啉 N 受体 + 苯胺 NH 供体）排布接近",
+      "mol_a": "erlotinib_erlo",
+      "mol_b": "lapatinib_lapa",
+      "sim_2d_ecfp4": 0.266,
+      "sim_3d_usrcat": 0.0854,
+      "gap_2d_minus_3d": 0.1806,
+      "fingerprint_bits": {
+        "shared": 25,
+        "only_a": 24,
+        "only_b": 45
+      },
+      "descriptors_a": {
+        "heavy_atoms": 28,
+        "mw": 379.15,
+        "rot_bonds": 8,
+        "rings": 3,
+        "on_bits": 49
+      },
+      "descriptors_b": {
+        "heavy_atoms": 42,
+        "mw": 606.15,
+        "rot_bonds": 12,
+        "rings": 5,
+        "on_bits": 70
+      }
+    },
+    "C_不相关分子": {
+      "desc": "完全不同的骨架与药效团（阿司匹林 vs 咖啡因）",
+      "mol_a": "aspirin",
+      "mol_b": "caffeine",
+      "sim_2d_ecfp4": 0.0889,
+      "sim_3d_usrcat": 0.1794,
+      "gap_2d_minus_3d": -0.0905,
+      "fingerprint_bits": {
+        "shared": 4,
+        "only_a": 20,
+        "only_b": 21
+      },
+      "descriptors_a": {
+        "heavy_atoms": 13,
+        "mw": 180.04,
+        "rot_bonds": 2,
+        "rings": 1,
+        "on_bits": 24
+      },
+      "descriptors_b": {
+        "heavy_atoms": 14,
+        "mw": 194.08,
+        "rot_bonds": 0,
+        "rings": 2,
+        "on_bits": 25
+      }
+    }
+  },
+  "method": {
+    "2d": "Morgan/ECFP4, radius=2, 2048 bits, Tanimoto",
+    "3d": "USRCAT (形状叠合, Tanimoto), 基于 3D 坐标"
+  },
+  "conclusions": {
+    "B组_2D低于3D": false,
+    "A组_2D与3D均高": false,
+    "C组_2D与3D均低": true
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "baseline（均匀兼顾）": {
+    "weights": {
+      "disease": 0.3,
+      "genetics": 0.25,
+      "pathway": 0.2,
+      "druggability": 0.25,
+      "safety": -0.2
+    },
+    "ranking": [
+      {
+        "target": "EGFR",
+        "score": 0.8475
+      },
+      {
+        "target": "KRAS",
+        "score": 0.6585
+      },
+      {
+        "target": "Target_B",
+        "score": 0.6025
+      },
+      {
+        "target": "Target_C",
+        "score": 0.579
+      },
+      {
+        "target": "Target_D",
+        "score": 0.57
+      }
+    ]
+  },
+  "只看生物学证据": {
+    "weights": {
+      "disease": 0.4,
+      "genetics": 0.35,
+      "pathway": 0.25,
+      "druggability": 0.0,
+      "safety": 0.0
+    },
+    "ranking": [
+      {
+        "target": "EGFR",
+        "score": 0.892
+      },
+      {
+        "target": "KRAS",
+        "score": 0.882
+      },
+      {
+        "target": "Target_B",
+        "score": 0.761
+      },
+      {
+        "target": "Target_C",
+        "score": 0.7175
+      },
+      {
+        "target": "Target_D",
+        "score": 0.5175
+      }
+    ]
+  },
+  "可成药性优先": {
+    "weights": {
+      "disease": 0.15,
+      "genetics": 0.1,
+      "pathway": 0.1,
+      "druggability": 0.55,
+      "safety": -0.1
+    },
+    "ranking": [
+      {
+        "target": "EGFR",
+        "score": 0.807
+      },
+      {
+        "target": "Target_D",
+        "score": 0.615
+      },
+      {
+        "target": "Target_B",
+        "score": 0.491
+      },
+      {
+        "target": "KRAS",
+        "score": 0.4555
+      },
+      {
+        "target": "Target_C",
+        "score": 0.4245
+      }
+    ]
+  },
+  "安全优先": {
+    "weights": {
+      "disease": 0.2,
+      "genetics": 0.15,
+      "pathway": 0.1,
+      "druggability": 0.15,
+      "safety": -0.4
+    },
+    "ranking": [
+      {
+        "target": "EGFR",
+        "score": 0.4255
+      },
+      {
+        "target": "Target_D",
+        "score": 0.315
+      },
+      {
+        "target": "Target_C",
+        "score": 0.277
+      },
+      {
+        "target": "KRAS",
+        "score": 0.2695
+      },
+      {
+        "target": "Target_B",
+        "score": 0.2365
+      }
+    ]
+  }
+}

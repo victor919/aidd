@@ -1,0 +1,62 @@
+project: egfr_mvp
+random_seed: 42
+target:
+  gene: EGFR
+  uniprot: P00533
+  chembl_id: CHEMBL203
+structure:
+  pdb_id: 1M17
+  ligand_resname: AQ4
+  pocket_radius: 5.0
+  numbering_offset_to_uniprot: 24
+activity:
+  endpoint: IC50
+  unit: nM
+  relation: '='
+  assay_type: B
+  max_records: 25000
+model:
+  fingerprint_radius: 2
+  fingerprint_size: 2048
+  split: scaffold
+  test_size: 0.2
+  rf_n_estimators: 500
+  chemprop_epochs: 50
+  chemprop_depth: 3
+  chemprop_hidden: 300
+  chemprop_ffn_layers: 2
+  chemprop_batch_size: 50
+docking:
+  n_screen: 30
+  box_size:
+  - 20
+  - 20
+  - 20
+  exhaustiveness: 8
+  n_poses: 9
+  cpu: 4
+  default_altloc: A
+  allow_bad_res: true
+  w_activity: 0.7
+  w_docking: 0.3
+admet:
+  mw_max: 500
+  logp_max: 5
+  tpsa_max: 140
+  qed_min: 0.3
+  activity_min: 7.0
+closed_loop:
+  n_rounds: 6
+  batch_size: 300
+  initial_labeled: 300
+  strategies:
+  - uncertainty
+  - random
+  - greedy
+paths:
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed
+  models: models
+  reports: reports
+  figures: figures

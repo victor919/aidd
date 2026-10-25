@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "method": "LIGSITE 式埋藏度(13轴) + 6连通聚类，自写 numpy/scipy",
+    "spacing_A": 1.0,
+    "occupied_radius_A": 1.8,
+    "ray_length_A": 12,
+    "buriedness_threshold": 9,
+    "min_cluster_A3": 50,
+    "true_site_def": "1M17 共晶配体 AQ4 5 埃内的残基 Cα 质心（各结构自身坐标系）",
+    "n_true_pocket_residues": 20,
+    "offset_AF_uniprot_minus_pdb": 24
+  },
+  "A_crystal_1M17": {
+    "name": "A 1M17 晶体结构（删除共晶配体）",
+    "n_protein_atoms": 2497,
+    "n_pockets_detected": 1,
+    "true_site_center": [
+      24.75,
+      -0.95,
+      54.51
+    ],
+    "top1_volume_A3": 7983.0,
+    "top1_dcc_A": 11.25,
+    "best_dcc_A": 11.25,
+    "top6_pockets": [
+      {
+        "volume_A3": 7983.0,
+        "mean_buriedness": 11.69,
+        "score": 93357.0,
+        "dcc_A": 11.25
+      }
+    ],
+    "ligand_overlap": {
+      "n_true_pocket_points": 1250,
+      "top5": [
+        {
+          "volume_A3": 7983.0,
+          "dcc_A": 11.25,
+          "overlap_points": 453,
+          "recall": 0.3624,
+          "precision": 0.0567
+        }
+      ]
+    }
+  },
+  "B_alphafold_full": {
+    "name": "B AF-P00533-F1 全长预测结构",
+    "n_protein_atoms": 9392,
+    "n_pockets_detected": 7,
+    "true_site_center": [
+      -6.56,
+      20.47,
+      15.6
+    ],
+    "top1_volume_A3": 26869.0,
+    "top1_dcc_A": 13.25,
+    "best_dcc_A": 13.25,
+    "top6_pockets": [
+      {
+        "volume_A3": 26869.0,
+        "mean_buriedness": 11.33,
+        "score": 304386.0,
+        "dcc_A": 13.25
+      },
+      {
+        "volume_A3": 5149.0,
+        "mean_buriedness": 11.84,
+        "score": 60955.0,
+        "dcc_A": 48.84
+      },
+      {
+        "volume_A3": 542.0,
+        "mean_buriedness": 11.41,
+        "score": 6184.0,
+        "dcc_A": 61.41
+      },
+      {
+        "volume_A3": 183.0,
+        "mean_buriedness": 10.86,
+        "score": 1987.0,
+        "dcc_A": 59.47
+      },
+      {
+        "volume_A3": 93.0,
+        "mean_buriedness": 10.24,
+        "score": 952.0,
+        "dcc_A": 65.69
+      },
+      {
+        "volume_A3": 55.0,
+        "mean_buriedness": 11.24,
+        "score": 618.0,
+        "dcc_A": 55.3
+      }
+    ],
+    "ligand_overlap": null
+  },
+  "C_alphafold_kinase_domain": {
+    "name": "C AF 裁到激酶域(PDB 672-995)",
+    "n_protein_atoms": 2593,
+    "n_pockets_detected": 1,
+    "true_site_center": [
+      -6.56,
+      20.47,
+      15.6
+    ],
+    "top1_volume_A3": 10191.0,
+    "top1_dcc_A": 11.06,
+    "best_dcc_A": 11.06,
+    "top6_pockets": [
+      {
+        "volume_A3": 10191.0,
+        "mean_buriedness": 11.56,
+        "score": 117759.0,
+        "dcc_A": 11.06
+      }
+    ],
+    "ligand_overlap": null
+  }
+}

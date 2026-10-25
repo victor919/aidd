@@ -1,0 +1,55 @@
+{
+  "Q1_rmsd_口径": {
+    "A_全部残基+全部拟合": 11.675,
+    "B_高置信子集+沿用全局变换": 4.857,
+    "C_高置信子集+子集独立拟合": 0.86,
+    "D_全部残基+沿用高置信拟合": 12.72,
+    "n_common": 312,
+    "n_hi": 239,
+    "n_lo": 30,
+    "rmsd_lo_subset_independent_fit": 13.069,
+    "说明_B减C": "同一批高置信残基，只换叠合方式：4.857 → 0.860",
+    "说明_A减B": "同一套全局变换，只换残基集合：11.675 → 4.857"
+  },
+  "Q2_迭代剔除": [
+    {
+      "n_residues": 312,
+      "rmsd_A": 11.675,
+      "max_dev_A": 60.057
+    },
+    {
+      "n_residues": 249,
+      "rmsd_A": 1.315,
+      "max_dev_A": 5.649
+    },
+    {
+      "n_residues": 199,
+      "rmsd_A": 0.516,
+      "max_dev_A": 1.539
+    },
+    {
+      "n_residues": 159,
+      "rmsd_A": 0.357,
+      "max_dev_A": 0.818
+    },
+    {
+      "n_residues": 127,
+      "rmsd_A": 0.278,
+      "max_dev_A": 0.485
+    },
+    {
+      "n_residues": 101,
+      "rmsd_A": 0.223,
+      "max_dev_A": 0.404
+    }
+  ],
+  "Q3_口袋vs非口袋": {
+    "pocket_n": 20,
+    "pocket_dev_mean_A": 5.28,
+    "pocket_dev_median_A": 5.448,
+    "nonpocket_n": 292,
+    "nonpocket_dev_mean_A": 6.959,
+    "nonpocket_dev_median_A": 4.452,
+    "结论": "同一全局变换下，口袋残基平均偏差 5.280 埃，非口袋 6.959 埃（口袋区反而更小）"
+  }
+}

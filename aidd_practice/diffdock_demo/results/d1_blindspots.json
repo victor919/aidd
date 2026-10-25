@@ -1,0 +1,150 @@
+{
+  "params": {
+    "fingerprint": "Morgan/ECFP4",
+    "radius": 2,
+    "n_bits": 2048,
+    "include_chirality_in_MVP": false,
+    "note": "与 aidd-mvp/config.yaml 的 fingerprint_radius=2 / fingerprint_size=2048 一致；99_selftest.py 与 06_scaffold_split.py 均使用默认 includeChirality=False"
+  },
+  "blindspot_1_chirality": {
+    "thalidomide_R_vs_S": {
+      "smiles_a": "C[C@H]1C(=O)NC(=O)[C@H](c2ccccc2)C1=O",
+      "smiles_b": "C[C@@H]1C(=O)NC(=O)[C@H](c2ccccc2)C1=O",
+      "canon_smiles_a": "C[C@H]1C(=O)NC(=O)[C@H](c2ccccc2)C1=O",
+      "canon_smiles_b": "C[C@@H]1C(=O)NC(=O)[C@H](c2ccccc2)C1=O",
+      "same_canonical_smiles": false,
+      "cip_centers_a": [
+        [
+          1,
+          "R"
+        ],
+        [
+          7,
+          "R"
+        ]
+      ],
+      "cip_centers_b": [
+        [
+          1,
+          "S"
+        ],
+        [
+          7,
+          "R"
+        ]
+      ],
+      "sim_ecfp4_no_chirality": 1.0,
+      "sim_ecfp4_with_chirality": 0.9259
+    },
+    "lactic_acid_D_vs_L": {
+      "smiles_a": "C[C@H](O)C(=O)O",
+      "smiles_b": "C[C@@H](O)C(=O)O",
+      "canon_smiles_a": "C[C@H](O)C(=O)O",
+      "canon_smiles_b": "C[C@@H](O)C(=O)O",
+      "same_canonical_smiles": false,
+      "cip_centers_a": [
+        [
+          1,
+          "S"
+        ]
+      ],
+      "cip_centers_b": [
+        [
+          1,
+          "R"
+        ]
+      ],
+      "sim_ecfp4_no_chirality": 1.0,
+      "sim_ecfp4_with_chirality": 0.6923
+    }
+  },
+  "blindspot_2_conformation": {
+    "molecule": "erlotinib",
+    "smiles": "C#Cc1ccc(Nc2ncnc3cc(OC)c(OCCOC)cc23)cc1OC",
+    "n_conformers_embedded": 14,
+    "conformer_pair_rmsd_max": 3.257,
+    "conformer_pair_rmsd_median": 2.141,
+    "rotatable_bonds": 8,
+    "sim_ecfp4_same_molecule": 1.0,
+    "shape_usrcat_two_independent_confs": 0.6548,
+    "note": "同一分子不同构象，2D 指纹相似度恒为 1.000；但构象间重原子 RMSD 可达数埃，USRCAT 形状相似度显著低于 1"
+  },
+  "blindspot_3_shape_vs_topology": {
+    "n_pairs": 10,
+    "spearman_rho_2d_vs_3d": 0.0303,
+    "pairs": [
+      {
+        "pair": "erlotinib vs gefitinib",
+        "sim_2d_ecfp4": 0.473,
+        "sim_3d_usrcat": 0.1643,
+        "diff_2d_minus_3d": 0.3087
+      },
+      {
+        "pair": "erlotinib vs lapatinib",
+        "sim_2d_ecfp4": 0.266,
+        "sim_3d_usrcat": 0.0854,
+        "diff_2d_minus_3d": 0.1806
+      },
+      {
+        "pair": "erlotinib vs afatinib",
+        "sim_2d_ecfp4": 0.4198,
+        "sim_3d_usrcat": 0.1306,
+        "diff_2d_minus_3d": 0.2891
+      },
+      {
+        "pair": "erlotinib vs osimertinib",
+        "sim_2d_ecfp4": 0.1667,
+        "sim_3d_usrcat": 0.1744,
+        "diff_2d_minus_3d": -0.0078
+      },
+      {
+        "pair": "gefitinib vs lapatinib",
+        "sim_2d_ecfp4": 0.3131,
+        "sim_3d_usrcat": 0.1024,
+        "diff_2d_minus_3d": 0.2107
+      },
+      {
+        "pair": "gefitinib vs afatinib",
+        "sim_2d_ecfp4": 0.4651,
+        "sim_3d_usrcat": 0.2422,
+        "diff_2d_minus_3d": 0.2229
+      },
+      {
+        "pair": "gefitinib vs osimertinib",
+        "sim_2d_ecfp4": 0.1712,
+        "sim_3d_usrcat": 0.2801,
+        "diff_2d_minus_3d": -0.1089
+      },
+      {
+        "pair": "lapatinib vs afatinib",
+        "sim_2d_ecfp4": 0.3204,
+        "sim_3d_usrcat": 0.1297,
+        "diff_2d_minus_3d": 0.1907
+      },
+      {
+        "pair": "lapatinib vs osimertinib",
+        "sim_2d_ecfp4": 0.129,
+        "sim_3d_usrcat": 0.1025,
+        "diff_2d_minus_3d": 0.0265
+      },
+      {
+        "pair": "afatinib vs osimertinib",
+        "sim_2d_ecfp4": 0.2364,
+        "sim_3d_usrcat": 0.2159,
+        "diff_2d_minus_3d": 0.0204
+      }
+    ],
+    "most_disagreeing_pair": {
+      "pair": "erlotinib vs gefitinib",
+      "sim_2d_ecfp4": 0.473,
+      "sim_3d_usrcat": 0.1643,
+      "diff_2d_minus_3d": 0.3087
+    }
+  },
+  "conclusions": {
+    "thalidomide_R_vs_S_2D看不出手性": true,
+    "lactic_acid_D_vs_L_2D看不出手性": true,
+    "盲区2_同一分子不同构象2D恒为1": true,
+    "盲区3_2D与3D排序不一致": true
+  }
+}

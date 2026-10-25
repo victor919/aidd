@@ -1,0 +1,21 @@
+# ChimeraX 一键出图：open egfr_pocket.cxc
+open 03_1M17_protein.pdb
+open 04_1M17_ligand_AQ4.pdb
+open 02_AF_superposed_on_1M17.pdb
+open 07_pocket_geo_AF_full.pdb
+open 06_pocket_geo_crystal.pdb
+hide
+cartoon
+color #6b7280 #1
+color bybfactor #2 palette alphafold
+show #3
+style #3 stick
+color #3 lime
+style #4 sphere
+color #4 orange
+transparency #4 55
+style #5 sphere
+color #5 cornflowerblue
+transparency #5 55
+view #3
+save egfr_pocket.png width 1600 height 1200 supersample 3

@@ -1,0 +1,15 @@
+# 本机已安装版本快照；跨平台安装需验证 wheel 可用性。
+numpy==2.4.6
+pandas==3.0.5
+PyYAML==6.0.3
+requests==2.34.2
+rdkit==2026.3.5
+scikit-learn==1.9.0
+joblib==1.5.3
+torch==2.13.0
+chemprop==2.3.1
+lightning==2.6.5
+vina==1.2.7
+biopython==1.88
+meeko==0.8.0
+gemmi==0.7.5

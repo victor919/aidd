@@ -1,0 +1,49 @@
+{
+  "piece_pool": 3310,
+  "summary": [
+    {
+      "group": "真实分子（ChEMBL，都被合成过）",
+      "n": 10468,
+      "SA_mean": 3.02,
+      "SA_median": 2.83,
+      "SA_max": 8.48,
+      "pass_SA45": 0.9572,
+      "pass_SA60": 0.9996,
+      "QED_mean": 0.397,
+      "MW_mean": 481.7,
+      "pass_lipinski": 0.5674
+    },
+    {
+      "group": "玩具生成器拼出来的分子",
+      "n": 2622,
+      "SA_mean": 3.4,
+      "SA_median": 3.24,
+      "SA_max": 7.95,
+      "pass_SA45": 0.8635,
+      "pass_SA60": 0.9722,
+      "QED_mean": 0.438,
+      "MW_mean": 461.9,
+      "pass_lipinski": 0.6419
+    }
+  ],
+  "generated_examples": [
+    {
+      "smiles": "c1ccc2c(c1)c1cn2CCCCCCN(c2ccc3cc2Nc2nccc(n2)-c2cn(c4ccccc24)CCCCCCN3c2ccc3cc2Nc2nccc(n2)-c2cn(c4ccccc24)CCCCCCN3C2CCCN2)c2ccc(C3CCCN3)c(c2)Nc2nccc-1n2",
+      "SA": 7.95,
+      "QED": 0.113,
+      "MW": 1284.7
+    },
+    {
+      "smiles": "CCS(=O)(=O)n1cc2c3ccc(cc31)OCCCCCCOc1cc(c(-c3cc(-c4cc(-c5cnn6cnnc6c5)c5cc4Nc4ncc(Cl)c(n4)-c4cn(S(=O)(=O)CC)c6cc(ccc46)OCCCCCCO5)c4cc3Nc3ncc(Cl)c(n3)-c3cn(S(=O)(=O)CC)c5cc(ccc35)OCCCCCCO4)cc1-c1cnn3cnnc3c1)Nc1ncc(Cl)c-2n1",
+      "SA": 7.93,
+      "QED": 0.114,
+      "MW": 1813.3
+    },
+    {
+      "smiles": "CCS(=O)(=O)n1cc2c3ccc(cc31)OCCCCCCOc1cc(c(-c3cnn4cnnc4c3)cc1-c1cc(-c3cc(-c4cnn5cnnc5c4)c4cc3Nc3ncc(Cl)c(n3)-c3cn(S(=O)(=O)CC)c5cc(ccc35)OCCCCCCO4)c3cc1OCCCCCCOc1ccc4c(cn(S(=O)(=O)CC)c4c1)-c1nc(ncc1Cl)N3)Nc1ncc(Cl)c-2n1",
+      "SA": 7.93,
+      "QED": 0.114,
+      "MW": 1813.3
+    }
+  ]
+}
