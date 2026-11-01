@@ -1,0 +1,37 @@
+{
+  "full_dataset_n": 10468,
+  "full_dataset_sha256": "0757f509f86fcf7d471db7d3d5d68dc448f7a8998ebf80e3d94c45ba1a092d2c",
+  "equal_width_bin_counts": [
+    8,
+    89,
+    958,
+    2360,
+    3019,
+    2966,
+    1006,
+    62
+  ],
+  "selected_per_bin": [
+    8,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12
+  ],
+  "total_selected": 92,
+  "histogram_edges": [
+    1.6020599913279625,
+    2.776802492411967,
+    3.951544993495972,
+    5.126287494579977,
+    6.301029995663981,
+    7.475772496747986,
+    8.65051499783199,
+    9.825257498915995,
+    11.0
+  ],
+  "note": "Counts confirm minimum-bin shortage; original pandas cut extends lower bound slightly, no boundary observation differs for this dataset."
+}

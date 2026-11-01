@@ -1,0 +1,75 @@
+{
+  "n": 92,
+  "sha256": "52b6978bf4c5c721dc1550350958deddffa5fd6de7ac5b4b44c51c40eb9ba0fe",
+  "pearson_vina_vs_experimental": -0.5427068336400838,
+  "spearman_vina_vs_experimental": -0.4983816775216573,
+  "vina_hits": {
+    "10": 3,
+    "20": 6,
+    "30": 14
+  },
+  "label_informed_mix_hits_NOT_predictive": {
+    "10": 10,
+    "20": 20,
+    "30": 28
+  },
+  "random_expected_hits": {
+    "10": 3.260869565217391,
+    "20": 6.521739130434782,
+    "30": 9.782608695652174
+  },
+  "top30_target_boundary_tie": false,
+  "vina_boundary_ties": {
+    "10": false,
+    "20": false,
+    "30": false
+  },
+  "experimental_range": [
+    1.6020599913279625,
+    10.539938336854638
+  ],
+  "legacy_cons_matches_true_label_formula": true,
+  "bins": [
+    {
+      "bin": 0,
+      "n": 19,
+      "vina_min": -10.296,
+      "vina_max": -9.063,
+      "mean_experimental_pIC50": 6.9274440549899925,
+      "median_experimental_pIC50": 7.292429823902063
+    },
+    {
+      "bin": 1,
+      "n": 18,
+      "vina_min": -9.054,
+      "vina_max": -8.59,
+      "mean_experimental_pIC50": 8.382482359030474,
+      "median_experimental_pIC50": 8.8253661268595
+    },
+    {
+      "bin": 2,
+      "n": 18,
+      "vina_min": -8.543,
+      "vina_max": -8.03,
+      "mean_experimental_pIC50": 6.779517089802535,
+      "median_experimental_pIC50": 6.4604093769761874
+    },
+    {
+      "bin": 3,
+      "n": 18,
+      "vina_min": -7.923,
+      "vina_max": -7.397,
+      "mean_experimental_pIC50": 6.078848170324686,
+      "median_experimental_pIC50": 6.084141879502413
+    },
+    {
+      "bin": 4,
+      "n": 19,
+      "vina_min": -7.345,
+      "vina_max": -5.392,
+      "mean_experimental_pIC50": 3.946327573521119,
+      "median_experimental_pIC50": 3.1938200260161125
+    }
+  ],
+  "note": "Recalculated from saved scores; no Vina rerun. p-values in article are inherited, not recalculated."
+}

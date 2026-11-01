@@ -1,0 +1,73 @@
+{
+  "redock_check": {
+    "crystal_pose_self_score": -6.024,
+    "docked_best_score": -7.375,
+    "n_poses": 9,
+    "best_pose_rank": 1,
+    "best_pose_rmsd": 1.411,
+    "all_scores": [
+      -7.375,
+      -7.224,
+      -7.218,
+      -7.1,
+      -6.872,
+      -6.841,
+      -6.77,
+      -6.685,
+      -6.545
+    ]
+  },
+  "n_screened": 30,
+  "n_docked": 30,
+  "n_skipped": 0,
+  "skipped": [],
+  "box": {
+    "center": [
+      22.014,
+      0.253,
+      52.794
+    ],
+    "size": [
+      20.0,
+      20.0,
+      20.0
+    ]
+  },
+  "weights": {
+    "activity": 0.7,
+    "docking": 0.3
+  },
+  "pearson_pred_vs_docking": -0.059,
+  "top5": [
+    {
+      "molecule_id": "mol0011",
+      "pred_pIC50": 9.74366955290681,
+      "docking_score": -9.194,
+      "consensus": 1.995703519579035
+    },
+    {
+      "molecule_id": "mol0046",
+      "pred_pIC50": 9.815542122847576,
+      "docking_score": -8.464,
+      "consensus": 1.8025894048295155
+    },
+    {
+      "molecule_id": "mol0000",
+      "pred_pIC50": 9.72179215787514,
+      "docking_score": -8.421,
+      "consensus": 1.5466688528177988
+    },
+    {
+      "molecule_id": "mol0008",
+      "pred_pIC50": 9.346721420467183,
+      "docking_score": -9.291,
+      "consensus": 1.054504087278878
+    },
+    {
+      "molecule_id": "mol1137",
+      "pred_pIC50": 9.226563653994992,
+      "docking_score": -9.402,
+      "consensus": 0.8112560334093669
+    }
+  ]
+}
