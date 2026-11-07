@@ -1,0 +1,47 @@
+{
+  "exact_duplicate": {
+    "rows": 10468,
+    "unique_smiles": 10468,
+    "dup_rows": 0
+  },
+  "random_scaffold": {
+    "n_test": 2093,
+    "seen": 1536,
+    "unseen": 557,
+    "seen_frac": 0.7339,
+    "scaffold_groups_in_train": 3327,
+    "scaffold_groups_split_across": 659
+  },
+  "decompose_random": {
+    "all_MAE": 0.5095,
+    "all_R2": 0.7319,
+    "seen_MAE": 0.4784,
+    "seen_R2": 0.7708,
+    "unseen_MAE": 0.5953,
+    "unseen_R2": 0.6128
+  },
+  "scaffold_seen_check": {
+    "seen": 0,
+    "n": 1770,
+    "MAE": 0.6015
+  },
+  "near_dup_random": {
+    "gt_0.95": 159,
+    "gt_0.9": 322,
+    "gt_0.8": 1214,
+    "gt_0.7": 1779,
+    "median": 0.8193,
+    "tight_MAE": 0.423,
+    "rest_MAE": 0.5252
+  },
+  "repeats": {
+    "n_multi": 3710,
+    "median_std": 0.4303,
+    "mean_std": 0.521,
+    "q25_std": 0.0551,
+    "q75_std": 0.8151,
+    "frac_std_gt_0.5": 0.4536,
+    "frac_std_gt_1.0": 0.1674,
+    "max_measurements": 236
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "n_train_fit": 7148,
+  "n_val": 1550,
+  "n_test": 1770,
+  "grid": [
+    {
+      "n_estimators": 500,
+      "max_features": "sqrt",
+      "min_samples_leaf": 1,
+      "val_R2": 0.6286,
+      "val_MAE": 0.6272,
+      "test_R2": 0.5847,
+      "test_MAE": 0.6527
+    },
+    {
+      "n_estimators": 200,
+      "max_features": "sqrt",
+      "min_samples_leaf": 1,
+      "val_R2": 0.6264,
+      "val_MAE": 0.629,
+      "test_R2": 0.5824,
+      "test_MAE": 0.6535
+    },
+    {
+      "n_estimators": 1000,
+      "max_features": "sqrt",
+      "min_samples_leaf": 1,
+      "val_R2": 0.6297,
+      "val_MAE": 0.6267,
+      "test_R2": 0.5883,
+      "test_MAE": 0.6505
+    },
+    {
+      "n_estimators": 500,
+      "max_features": 0.3,
+      "min_samples_leaf": 1,
+      "val_R2": 0.6207,
+      "val_MAE": 0.6275,
+      "test_R2": 0.5967,
+      "test_MAE": 0.6323
+    },
+    {
+      "n_estimators": 500,
+      "max_features": 0.5,
+      "min_samples_leaf": 1,
+      "val_R2": 0.6144,
+      "val_MAE": 0.6321,
+      "test_R2": 0.5908,
+      "test_MAE": 0.6357
+    },
+    {
+      "n_estimators": 500,
+      "max_features": "sqrt",
+      "min_samples_leaf": 3,
+      "val_R2": 0.5764,
+      "val_MAE": 0.6795,
+      "test_R2": 0.5178,
+      "test_MAE": 0.7143
+    },
+    {
+      "n_estimators": 500,
+      "max_features": "sqrt",
+      "min_samples_leaf": 5,
+      "val_R2": 0.541,
+      "val_MAE": 0.71,
+      "test_R2": 0.4766,
+      "test_MAE": 0.7497
+    },
+    {
+      "n_estimators": 1000,
+      "max_features": 0.5,
+      "min_samples_leaf": 3,
+      "val_R2": 0.6123,
+      "val_MAE": 0.6401,
+      "test_R2": 0.5832,
+      "test_MAE": 0.6485
+    }
+  ],
+  "default": {
+    "n_estimators": 500,
+    "max_features": "sqrt",
+    "min_samples_leaf": 1,
+    "val_R2": 0.6286,
+    "val_MAE": 0.6272,
+    "test_R2": 0.5847,
+    "test_MAE": 0.6527
+  },
+  "best_by_val": {
+    "n_estimators": 1000,
+    "max_features": "sqrt",
+    "min_samples_leaf": 1,
+    "val_R2": 0.6297,
+    "val_MAE": 0.6267,
+    "test_R2": 0.5883,
+    "test_MAE": 0.6505
+  },
+  "best_by_test": {
+    "n_estimators": 500,
+    "max_features": 0.3,
+    "min_samples_leaf": 1,
+    "val_R2": 0.6207,
+    "val_MAE": 0.6275,
+    "test_R2": 0.5967,
+    "test_MAE": 0.6323
+  },
+  "inflation_R2": 0.0084,
+  "inflation_MAE": 0.0182,
+  "val_test_rank_disagree": true
+}

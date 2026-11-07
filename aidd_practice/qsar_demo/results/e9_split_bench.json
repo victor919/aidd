@@ -1,0 +1,175 @@
+{
+  "n": 10468,
+  "n_features": 2048,
+  "n_trees": 500,
+  "seed": 42,
+  "splits": {
+    "random": {
+      "n_train": 8375,
+      "n_test": 2093,
+      "train_MAE": 0.1995,
+      "train_R2": 0.9573,
+      "test_MAE": 0.5095,
+      "test_RMSE": 0.7026,
+      "test_R2": 0.7319,
+      "gap_R2": 0.2254,
+      "spearman": 0.86,
+      "kendall": 0.6804,
+      "CI": 0.8405,
+      "EF5": 11.96,
+      "EF10": 7.344,
+      "EF5_k": 105,
+      "recall": {
+        "10": 7,
+        "20": 12,
+        "30": 14,
+        "100": 17,
+        "200": 22
+      },
+      "recall_expect": {
+        "10": 0.14,
+        "20": 0.29,
+        "30": 0.43,
+        "100": 1.43,
+        "200": 2.87
+      },
+      "scaffold_overlap": 1536,
+      "scaffold_overlap_frac": 0.7339,
+      "maxsim": {
+        "median": 0.8193,
+        "q25": 0.75,
+        "q75": 0.875,
+        "frac_gt_0.9": 0.1538,
+        "frac_gt_0.7": 0.85,
+        "frac_lt_0.4": 0.0139
+      },
+      "MAE_median_abs": 0.3705,
+      "MAE_p90": 1.1513,
+      "domain_R2_0.7": {
+        "in_n": 1783,
+        "out_n": 310,
+        "in_R2": 0.7564,
+        "out_R2": 0.5273,
+        "in_MAE": 0.4678,
+        "out_MAE": 0.7492
+      },
+      "domain_R2_0.5": {
+        "in_n": 2035,
+        "out_n": 58,
+        "in_R2": 0.7495,
+        "out_R2": 0.0982,
+        "in_MAE": 0.496,
+        "out_MAE": 0.9848
+      },
+      "domain_R2_0.4": {
+        "in_n": 2064,
+        "out_n": 29,
+        "in_R2": 0.7444,
+        "out_R2": -0.0031,
+        "in_MAE": 0.5,
+        "out_MAE": 1.1888
+      }
+    },
+    "scaffold": {
+      "n_train": 8698,
+      "n_test": 1770,
+      "train_MAE": 0.1939,
+      "train_R2": 0.9592,
+      "test_MAE": 0.6015,
+      "test_RMSE": 0.8006,
+      "test_R2": 0.6485,
+      "gap_R2": 0.3107,
+      "spearman": 0.811,
+      "kendall": 0.6181,
+      "CI": 0.8094,
+      "EF5": 7.375,
+      "EF10": 4.667,
+      "EF5_k": 88,
+      "recall": {
+        "10": 3,
+        "20": 6,
+        "30": 7,
+        "100": 12,
+        "200": 15
+      },
+      "recall_expect": {
+        "10": 0.17,
+        "20": 0.34,
+        "30": 0.51,
+        "100": 1.69,
+        "200": 3.39
+      },
+      "scaffold_overlap": 0,
+      "scaffold_overlap_frac": 0.0,
+      "maxsim": {
+        "median": 0.7439,
+        "q25": 0.6279,
+        "q75": 0.8233,
+        "frac_gt_0.9": 0.0915,
+        "frac_gt_0.7": 0.6209,
+        "frac_lt_0.4": 0.0616
+      },
+      "MAE_median_abs": 0.4656,
+      "MAE_p90": 1.3145,
+      "domain_R2_0.7": {
+        "in_n": 1105,
+        "out_n": 665,
+        "in_R2": 0.6923,
+        "out_R2": 0.5834,
+        "in_MAE": 0.494,
+        "out_MAE": 0.78
+      },
+      "domain_R2_0.5": {
+        "in_n": 1606,
+        "out_n": 164,
+        "in_R2": 0.64,
+        "out_R2": 0.4552,
+        "in_MAE": 0.5862,
+        "out_MAE": 0.7509
+      },
+      "domain_R2_0.4": {
+        "in_n": 1661,
+        "out_n": 109,
+        "in_R2": 0.6406,
+        "out_R2": 0.0894,
+        "in_MAE": 0.5911,
+        "out_MAE": 0.7592
+      }
+    }
+  },
+  "loop92": {
+    "n": 92,
+    "rows": [
+      {
+        "strategy": "Vina",
+        "recall_10": 3,
+        "recall_20": 6,
+        "recall_30": 14,
+        "spearman": 0.4984,
+        "MAE": null
+      },
+      {
+        "strategy": "QSAR",
+        "recall_10": 10,
+        "recall_20": 20,
+        "recall_30": 27,
+        "spearman": 0.8948,
+        "MAE": 0.8995
+      },
+      {
+        "strategy": "RankFusion",
+        "recall_10": 9,
+        "recall_20": 15,
+        "recall_30": 23,
+        "spearman": 0.8004,
+        "MAE": 39.1656
+      }
+    ],
+    "expect": {
+      "10": 3.26,
+      "20": 6.52,
+      "30": 9.78
+    },
+    "note": "融合只用 Vina 与 QSAR 预测，未引入 pIC50 真值列"
+  }
+}

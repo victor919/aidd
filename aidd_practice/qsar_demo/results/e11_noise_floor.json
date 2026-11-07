@@ -1,0 +1,45 @@
+{
+  "n": 10468,
+  "var_y": 1.8268,
+  "sd_y": 1.3516,
+  "n_multi": 3710,
+  "sigma_median": 0.4303,
+  "sigma_mean": 0.521,
+  "sigma_q75": 0.8151,
+  "ceilings": {
+    "median": {
+      "sigma": 0.4303,
+      "R2_cap": 0.8987,
+      "MAE_floor": 0.3433,
+      "random_MAE_over_floor": 1.484,
+      "scaffold_MAE_over_floor": 1.752,
+      "random_R2_share_of_cap": 0.814,
+      "scaffold_R2_share_of_cap": 0.722
+    },
+    "mean": {
+      "sigma": 0.521,
+      "R2_cap": 0.8514,
+      "MAE_floor": 0.4157,
+      "random_MAE_over_floor": 1.226,
+      "scaffold_MAE_over_floor": 1.447,
+      "random_R2_share_of_cap": 0.86,
+      "scaffold_R2_share_of_cap": 0.762
+    },
+    "q75": {
+      "sigma": 0.8151,
+      "R2_cap": 0.6363,
+      "MAE_floor": 0.6503,
+      "random_MAE_over_floor": 0.783,
+      "scaffold_MAE_over_floor": 0.925,
+      "random_R2_share_of_cap": 1.15,
+      "scaffold_R2_share_of_cap": 1.019
+    }
+  },
+  "observed": {
+    "random_MAE": 0.5095,
+    "scaffold_MAE": 0.6015,
+    "random_R2": 0.7319,
+    "scaffold_R2": 0.6485
+  },
+  "ci95_width": 1.687
+}
