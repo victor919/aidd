@@ -1,0 +1,97 @@
+{
+  "n_total": 92,
+  "n_docked": 92,
+  "sampling": "按 pIC50_median 分 8 箱，每箱抽 12 个",
+  "box_center": [
+    22.014,
+    0.253,
+    52.794
+  ],
+  "box_size": [
+    20.0,
+    20.0,
+    20.0
+  ],
+  "exhaustiveness": 8,
+  "seed": 42,
+  "corr_vina_vs_true_pIC50": {
+    "spearman_rho": -0.4984,
+    "spearman_p": 4.29e-07,
+    "pearson_r": -0.5427,
+    "pearson_p": 2.29e-08,
+    "note": "Vina 分数越负=结合越强，预期与 pIC50 正相关"
+  },
+  "vina_bins": [
+    {
+      "bin": 0,
+      "vina_range": [
+        -10.296,
+        -9.063
+      ],
+      "n": 19,
+      "mean_true_pIC50": 6.927,
+      "median_true_pIC50": 7.292
+    },
+    {
+      "bin": 1,
+      "vina_range": [
+        -9.054,
+        -8.59
+      ],
+      "n": 18,
+      "mean_true_pIC50": 8.382,
+      "median_true_pIC50": 8.825
+    },
+    {
+      "bin": 2,
+      "vina_range": [
+        -8.543,
+        -8.03
+      ],
+      "n": 18,
+      "mean_true_pIC50": 6.78,
+      "median_true_pIC50": 6.46
+    },
+    {
+      "bin": 3,
+      "vina_range": [
+        -7.923,
+        -7.397
+      ],
+      "n": 18,
+      "mean_true_pIC50": 6.079,
+      "median_true_pIC50": 6.084
+    },
+    {
+      "bin": 4,
+      "vina_range": [
+        -7.345,
+        -5.392
+      ],
+      "n": 19,
+      "mean_true_pIC50": 3.946,
+      "median_true_pIC50": 3.194
+    }
+  ],
+  "budget_recall_of_top30": {
+    "top_true_set_size": 30,
+    "strategies": {
+      "A_只按Vina": {
+        "10": 7,
+        "20": 9,
+        "30": 14
+      },
+      "B_只按真实活性": {
+        "10": 10,
+        "20": 20,
+        "30": 30
+      },
+      "C_consensus": {
+        "10": 10,
+        "20": 19,
+        "30": 28
+      }
+    },
+    "note": "命中数 = 选出的前 N 个里有多少落在真实活性 Top-30 中（上限 30）"
+  }
+}
