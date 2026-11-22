@@ -275,5 +275,13 @@
   ],
   "queries_total": 1924,
   "cache_hits": 165,
-  "invalid_proposals": 163
+  "invalid_proposals": 163,
+  "pairwise": {
+    "n": 9,
+    "d_pred_median": 0.5916,
+    "d_nn_median": 0.0056,
+    "B_nn_higher_count": 6,
+    "B_nn_lower_count": 3,
+    "note": "逐组差值口径；跨组中位数受 B 臂两个高值与三个低值影响，与逐对差值不同"
+  }
 }

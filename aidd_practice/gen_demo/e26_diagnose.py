@@ -87,7 +87,7 @@ def gnn_predict(smis):
     return pn * scale + mean
 
 # 收集生成候选（e25 的保留记录 + e24 的候选池摘要）
-rec = json.load(open(os.path.join(RES, "e25_closedloop.json")))["audit_records"]
+rec = json.load(open(os.path.join(RES, "e25_closedloop.json")))["all_records"]  # 全量 27 次运行（原 audit_records 只存最后一次，已废弃）
 smis = list(dict.fromkeys([x["smiles"] for x in rec]))
 log("unique generated candidates", len(smis))
 if len(smis) > 1200:
@@ -111,6 +111,21 @@ out["generated"] = dict(
     spearman_disagree_vs_nn=round(float(spearmanr(dis, nn_).statistic), 4),
     note="生成候选无实验标签：这里只报告分歧分布，不声称筛掉错误候选",
     top_disagree=sorted(rows, key=lambda x: -x["disagree"])[:5])
+# 固定规则选例（四条规则各选一个；同一结构可占多个位置，不事后替换）
+import pandas as pd
+_df = pd.read_csv(os.path.join(HERE, "..", "..", "aidd-mvp", "data", "processed", "dataset_with_scaffold.csv"))
+_fit = set(_df.smiles.values[np.array(json.load(open(os.path.join(RES, "e23_indices.json")))["fit"])])
+_rules = {
+    "RF 预测最高": max(rows, key=lambda x: x["RF"]),
+    "最近邻最低": min(rows, key=lambda x: x["nn"]),
+    "分歧最大": max(rows, key=lambda x: x["disagree"]),
+    "SA 最高": max(rows, key=lambda x: x["SA"]),
+}
+out["generated"]["cards"] = [
+    dict(rule=k, smiles=v["smiles"], RF=v["RF"], GNN=v["GNN"], disagree=v["disagree"],
+         nn=v["nn"], SA=v["SA"], QED=v["QED"], MW=v["MW"],
+         in_fit=bool(v["smiles"] in _fit))
+    for k, v in _rules.items()]
 json.dump(out, open(os.path.join(RES, "e26_disagreement.json"), "w", encoding="utf-8"),
           ensure_ascii=False, indent=2)
 log("wrote e26_disagreement.json")

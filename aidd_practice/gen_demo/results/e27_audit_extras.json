@@ -1,0 +1,199 @@
+{
+  "pairwise_B_minus_A": {
+    "n": 9,
+    "d_pred_median": 0.7451,
+    "d_nn_median": 0.0708,
+    "B_lower_count": 2,
+    "rows": [
+      {
+        "seed": 42,
+        "start": 0,
+        "d_pred_BminusA": 1.1838,
+        "d_nn_BminusA": -0.1475,
+        "B_nn_lower_than_A": true
+      },
+      {
+        "seed": 42,
+        "start": 1,
+        "d_pred_BminusA": 1.061,
+        "d_nn_BminusA": -0.091,
+        "B_nn_lower_than_A": false
+      },
+      {
+        "seed": 42,
+        "start": 2,
+        "d_pred_BminusA": -0.0853,
+        "d_nn_BminusA": 0.0708,
+        "B_nn_lower_than_A": false
+      },
+      {
+        "seed": 43,
+        "start": 0,
+        "d_pred_BminusA": 0.043,
+        "d_nn_BminusA": 0.2352,
+        "B_nn_lower_than_A": false
+      },
+      {
+        "seed": 43,
+        "start": 1,
+        "d_pred_BminusA": 0.8664,
+        "d_nn_BminusA": 0.2063,
+        "B_nn_lower_than_A": false
+      },
+      {
+        "seed": 43,
+        "start": 2,
+        "d_pred_BminusA": 0.0635,
+        "d_nn_BminusA": -0.2984,
+        "B_nn_lower_than_A": true
+      },
+      {
+        "seed": 44,
+        "start": 0,
+        "d_pred_BminusA": 0.7451,
+        "d_nn_BminusA": 0.0917,
+        "B_nn_lower_than_A": false
+      },
+      {
+        "seed": 44,
+        "start": 1,
+        "d_pred_BminusA": 1.1172,
+        "d_nn_BminusA": 0.2499,
+        "B_nn_lower_than_A": false
+      },
+      {
+        "seed": 44,
+        "start": 2,
+        "d_pred_BminusA": -0.3628,
+        "d_nn_BminusA": -0.1472,
+        "B_nn_lower_than_A": false
+      }
+    ]
+  },
+  "endpoint_identity": {
+    "fit_smis": 7148,
+    "by_arm": {
+      "A": {
+        "n_runs": 9,
+        "runs_with_fit_endpoint": 0,
+        "runs_with_nn1_endpoint": 0,
+        "endpoint_unique": 45
+      },
+      "B": {
+        "n_runs": 9,
+        "runs_with_fit_endpoint": 0,
+        "runs_with_nn1_endpoint": 0,
+        "endpoint_unique": 45
+      },
+      "C": {
+        "n_runs": 9,
+        "runs_with_fit_endpoint": 0,
+        "runs_with_nn1_endpoint": 0,
+        "endpoint_unique": 38
+      }
+    },
+    "note": "身份回查用规范 SMILES 集合精确匹配；NN≈1 只作辅助，不单凭相似度下结论"
+  },
+  "action_bias": {
+    "by_arm": {
+      "A": {
+        "n": 9,
+        "MW_change_median": -16.6,
+        "MW_change_range": [
+          -133.3,
+          105.1
+        ],
+        "SA_change_median": 0.041,
+        "QED_change_median": -0.071
+      },
+      "B": {
+        "n": 9,
+        "MW_change_median": 83.4,
+        "MW_change_range": [
+          -43.9,
+          249.9
+        ],
+        "SA_change_median": 0.909,
+        "QED_change_median": -0.078
+      },
+      "C": {
+        "n": 8,
+        "MW_change_median": 67.5,
+        "MW_change_range": [
+          -101.6,
+          255.9
+        ],
+        "SA_change_median": 0.234,
+        "QED_change_median": -0.306
+      }
+    },
+    "revisit": {
+      "A": {
+        "slots": 359,
+        "repeats": 7,
+        "frac": 0.0195
+      },
+      "B": {
+        "slots": 360,
+        "repeats": 14,
+        "frac": 0.0389
+      },
+      "C": {
+        "slots": 302,
+        "repeats": 16,
+        "frac": 0.053
+      }
+    },
+    "note": "随机臂无选择压力，片段替换近似随机游走；分子量/SA 变化是动作本身的偏置，不是活性结论"
+  },
+  "production": {
+    "by_arm": {
+      "A": {
+        "slots": 359,
+        "unique": 341,
+        "novel_vs_fit": 1.0,
+        "novel_vs_snapshot": 1.0
+      },
+      "B": {
+        "slots": 360,
+        "unique": 335,
+        "novel_vs_fit": 1.0,
+        "novel_vs_snapshot": 1.0
+      },
+      "C": {
+        "slots": 302,
+        "unique": 276,
+        "novel_vs_fit": 1.0,
+        "novel_vs_snapshot": 1.0
+      }
+    },
+    "queries_total": 4342,
+    "cache_hits": 1268,
+    "invalid": 2312,
+    "note": "槽位含重复；分母不同，不能连成通关率"
+  },
+  "attr_filter_demo": {
+    "criteria": "MW 150-600; SA<=4.5; QED>=0.4（搜索中未使用，事后演示）",
+    "by_arm": {
+      "A": {
+        "endpoint_unique": 45,
+        "mw": 42,
+        "mw_sa": 41,
+        "mw_sa_qed": 37
+      },
+      "B": {
+        "endpoint_unique": 45,
+        "mw": 41,
+        "mw_sa": 37,
+        "mw_sa_qed": 29
+      },
+      "C": {
+        "endpoint_unique": 38,
+        "mw": 30,
+        "mw_sa": 27,
+        "mw_sa_qed": 14
+      }
+    },
+    "note": "剩得多不等于活性更好；阈值不参与证明搜索优劣"
+  }
+}

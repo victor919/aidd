@@ -29,7 +29,7 @@ res = {"design": dict(query_budget=QUERY_BUDGET, beam=BEAM, per_beam=PER_BEAM,
                       n_starts=len(starts), ad_floor=AD_FLOOR,
                       budget_unit="oracle 查询次数（新唯一有效候选才计费；重复走缓存）",
                       note="A/B/C 同起点、同提议函数、同每轮候选数、同基本检查；只改保留规则"),
-       "runs": []}
+       "runs": [], "all_records": []}
 
 for seed in SEEDS:
     for si, st in enumerate(starts):
@@ -63,9 +63,11 @@ for seed in SEEDS:
                     if not chosen:  # 无可保留：记停滞，不强行放宽
                         chosen = []
                 for s, d in chosen:
-                    keep_records.append(dict(round=rnd, arm=arm, seed=seed, start=si,
-                                             smiles=s, pred=d["pred"], nn=d["nn"],
-                                             SA=d["SA"], QED=d["QED"], MW=d["MW"]))
+                    rec = dict(round=rnd, arm=arm, seed=seed, start=si,
+                               smiles=s, pred=d["pred"], nn=d["nn"],
+                               SA=d["SA"], QED=d["QED"], MW=d["MW"])
+                    keep_records.append(rec)
+                    res["all_records"].append(rec)
                 m = stats([s for s, _ in chosen], w)
                 m.update(round=rnd, queries=w.query_count - query0)
                 rows.append(m)

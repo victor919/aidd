@@ -63,64 +63,114 @@
     ]
   },
   "generated": {
-    "n": 33,
-    "n_sampled": 33,
-    "disagree_median": 0.726,
-    "disagree_q90": 1.6503,
-    "frac_disagree_gt1": 0.4242,
-    "frac_nn_lt_05": 0.8182,
-    "spearman_disagree_vs_nn": -0.1323,
+    "n": 914,
+    "n_sampled": 914,
+    "disagree_median": 0.8797,
+    "disagree_q90": 1.9946,
+    "frac_disagree_gt1": 0.4365,
+    "frac_nn_lt_05": 0.7976,
+    "spearman_disagree_vs_nn": -0.0089,
     "note": "生成候选无实验标签：这里只报告分歧分布，不声称筛掉错误候选",
     "top_disagree": [
       {
-        "smiles": "COc1cc2c(NCC(C)(C)S(C)(=O)=O)ncnc2cc1N1CC2(CN(C)C2)OC1=O",
-        "RF": 7.1784,
-        "GNN": 9.5803,
-        "disagree": 2.4019,
-        "nn": 0.55,
-        "SA": 3.713,
-        "QED": 0.701,
-        "MW": 449.5
+        "smiles": "N#CC(C#N)=C(C#N)C#N",
+        "RF": 4.1421,
+        "GNN": -1.369,
+        "disagree": 5.5111,
+        "nn": 0.3182,
+        "SA": 3.479,
+        "QED": 0.44,
+        "MW": 128.1
       },
       {
-        "smiles": "CN1CC2(C1)CN(c1cc3c(-c4cccc5cnc(Cl)cc45)ncnc3cc1-c1cccc3cnc(Cl)cc13)C(=O)O2",
-        "RF": 7.0479,
-        "GNN": 9.2311,
-        "disagree": 2.1832,
-        "nn": 0.4588,
-        "SA": 3.79,
-        "QED": 0.204,
-        "MW": 593.5
+        "smiles": "N#CC(C(=N)S)=C(C#N)C(=N)S",
+        "RF": 4.2912,
+        "GNN": -0.6533,
+        "disagree": 4.9445,
+        "nn": 0.2273,
+        "SA": 4.481,
+        "QED": 0.231,
+        "MW": 196.3
       },
       {
-        "smiles": "CN1CC2(C1)CN(c1cc3c(N4CC5(CN(C)C5)OC4=O)ncnc3cc1N1CCC(F)CC1)C(=O)O2",
-        "RF": 6.9228,
-        "GNN": 8.8476,
-        "disagree": 1.9248,
-        "nn": 0.4321,
-        "SA": 4.356,
-        "QED": 0.612,
-        "MW": 511.6
+        "smiles": "N#CC(C#N)C[C@@H]1CN2CCC[C@@H]2C(=O)N1",
+        "RF": 5.3537,
+        "GNN": 1.7065,
+        "disagree": 3.6472,
+        "nn": 0.3049,
+        "SA": 4.005,
+        "QED": 0.707,
+        "MW": 218.3
       },
       {
-        "smiles": "CN1CC2(C1)CN(c1cc3ncnc(N4CC5(CN(C)C5)OC4=O)c3cc1-c1cc(Cl)cc(C=O)c1)C(=O)O2",
-        "RF": 6.9279,
-        "GNN": 8.5786,
-        "disagree": 1.6507,
-        "nn": 0.407,
-        "SA": 4.321,
-        "QED": 0.454,
-        "MW": 549.0
+        "smiles": "N#CC(C#N)Cc1cocn1",
+        "RF": 5.7649,
+        "GNN": 2.1478,
+        "disagree": 3.6171,
+        "nn": 0.3429,
+        "SA": 3.865,
+        "QED": 0.622,
+        "MW": 147.1
       },
       {
-        "smiles": "CN1CC2(C1)CN(c1cc3c(N4CC5(CN(C)C5)OC4=O)ncnc3cc1CCCO)C(=O)O2",
-        "RF": 6.8631,
-        "GNN": 8.512,
-        "disagree": 1.6489,
-        "nn": 0.4198,
-        "SA": 4.271,
-        "QED": 0.682,
-        "MW": 468.5
+        "smiles": "Cc1scnc1CC(C#N)C(=N)S",
+        "RF": 6.1231,
+        "GNN": 2.5437,
+        "disagree": 3.5794,
+        "nn": 0.413,
+        "SA": 4.353,
+        "QED": 0.456,
+        "MW": 211.3
+      }
+    ],
+    "cards": [
+      {
+        "rule": "RF 预测最高",
+        "smiles": "CN1CC2(C1)CN(c1cc3c(Nc4cccc(Cl)c4F)ncnc3cc1-c1cccc(Cl)c1F)C(=O)O2",
+        "RF": 10.045,
+        "GNN": 10.4716,
+        "disagree": 0.4266,
+        "nn": 0.7887,
+        "SA": 3.545,
+        "QED": 0.328,
+        "MW": 542.4,
+        "in_fit": false
+      },
+      {
+        "rule": "最近邻最低",
+        "smiles": "CCC(C)NC(C)CC",
+        "RF": 5.0166,
+        "GNN": 5.2095,
+        "disagree": 0.1929,
+        "nn": 0.1429,
+        "SA": 2.889,
+        "QED": 0.613,
+        "MW": 129.2,
+        "in_fit": false
+      },
+      {
+        "rule": "分歧最大",
+        "smiles": "N#CC(C#N)=C(C#N)C#N",
+        "RF": 4.1421,
+        "GNN": -1.369,
+        "disagree": 5.5111,
+        "nn": 0.3182,
+        "SA": 3.479,
+        "QED": 0.44,
+        "MW": 128.1,
+        "in_fit": false
+      },
+      {
+        "rule": "SA 最高",
+        "smiles": "Cc1ccc(-c2cc3ncnc(C4CCC5(CC4)OCC4(OO5)C5CC6CC(C5)CC4C6)c3cc2C2CCC3(CC2)OCC2(OO3)C3CC4CC(C3)CC2C4)c(C)c1",
+        "RF": 6.8763,
+        "GNN": 7.1072,
+        "disagree": 0.2309,
+        "nn": 0.4,
+        "SA": 6.71,
+        "QED": 0.243,
+        "MW": 787.1,
+        "in_fit": false
       }
     ]
   }
