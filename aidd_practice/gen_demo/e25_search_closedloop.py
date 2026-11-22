@@ -81,8 +81,9 @@ for seed in SEEDS:
 res["queries_total"] = w.query_count
 res["cache_hits"] = w.cache_hits
 res["invalid_proposals"] = w.invalid
-res["audit_records"] = keep_records
+# 注意：不再输出 audit_records 字段。旧版本误存了最后一次运行的 keep_records
+# （曾导致 33 个候选的假样本量）；全量审计记录以 all_records 为准（1021 条，去重后 914 个）。
 json.dump(res, open(os.path.join(RES, "e25_closedloop.json"), "w", encoding="utf-8"),
           ensure_ascii=False, indent=2)
-log("wrote e25_closedloop.json; records", len(keep_records), "queries", w.query_count,
+log("wrote e25_closedloop.json; all_records", len(res["all_records"]), "queries", w.query_count,
     "cache", w.cache_hits, "invalid", w.invalid)
