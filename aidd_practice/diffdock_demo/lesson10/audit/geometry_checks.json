@@ -1,0 +1,10 @@
+{
+  "input": "12 random points, seed=20261031",
+  "n_rotations": 24,
+  "max_rotation_equivariance_error": 1.1102230246251565e-15,
+  "reflection_equivariance_error": 0.0,
+  "mirror_distance_matrix_error": 0.0,
+  "signed_volume_original": 0.12000000000000001,
+  "signed_volume_mirror": -0.12000000000000001,
+  "note": "Fixed ordered vertices. Signed volume is rotation invariant and changes sign under reflection; not reflection-invariant. Raw vector change alone does not prove chirality-sensitive scalar prediction."
+}
