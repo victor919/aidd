@@ -1,0 +1,97 @@
+{
+  "source": "Own lesson13 frozen results; attachment supplies questions, not numbers",
+  "seed_pairs": [
+    {
+      "seed": 42,
+      "pairs": 6,
+      "RF_delta_B_minus_A_mean": 2.696595376419214,
+      "NN_delta_B_minus_A_mean": 0.4960644862753297
+    },
+    {
+      "seed": 43,
+      "pairs": 6,
+      "RF_delta_B_minus_A_mean": 1.7367783881018342,
+      "NN_delta_B_minus_A_mean": 0.3582116241761037
+    },
+    {
+      "seed": 44,
+      "pairs": 6,
+      "RF_delta_B_minus_A_mean": 2.6567300522074575,
+      "NN_delta_B_minus_A_mean": 0.31460257277224213
+    }
+  ],
+  "changes": [
+    {
+      "arm": "A",
+      "RF_change_mean": -1.2055821627839205,
+      "nn_similarity_change_mean": -0.6864678167577594,
+      "MW_change_mean": -319.4126111111112,
+      "SA_change_mean": -0.28605356032333007,
+      "QED_change_mean": 0.3324846098179293
+    },
+    {
+      "arm": "B",
+      "RF_change_mean": 1.1577857761255812,
+      "nn_similarity_change_mean": -0.2968415890165342,
+      "MW_change_mean": -61.194877580222204,
+      "SA_change_mean": 0.49846396978426405,
+      "QED_change_mean": 0.10954714993507471
+    }
+  ],
+  "historical_both_wrong_rule": "|RF-GNN| < 0.5 and both absolute errors > 2",
+  "historical_both_wrong_count": 27,
+  "historical_both_wrong_examples": [
+    {
+      "index": 1,
+      "true": 10.602059991327964,
+      "RF": 8.044031543233487,
+      "GNN": 8.220174
+    },
+    {
+      "index": 57,
+      "true": 9.863522527575912,
+      "RF": 6.218063523329209,
+      "GNN": 6.187625
+    },
+    {
+      "index": 60,
+      "true": 9.849474145077387,
+      "RF": 6.157586658991463,
+      "GNN": 5.719982
+    }
+  ],
+  "historical_disagreement_bins": [
+    {
+      "quartile": 1,
+      "n": 443,
+      "max_error_median": 0.4672613124811153,
+      "min_error_median": 0.3847443045356984,
+      "max_error_gt1_fraction": 0.18510158013544017
+    },
+    {
+      "quartile": 2,
+      "n": 442,
+      "max_error_median": 0.6078178457827237,
+      "min_error_median": 0.3567323366472932,
+      "max_error_gt1_fraction": 0.248868778280543
+    },
+    {
+      "quartile": 3,
+      "n": 442,
+      "max_error_median": 0.7797706296440863,
+      "min_error_median": 0.29588246006986685,
+      "max_error_gt1_fraction": 0.3597285067873303
+    },
+    {
+      "quartile": 4,
+      "n": 443,
+      "max_error_median": 1.1589045113861118,
+      "min_error_median": 0.3414836270062009,
+      "max_error_gt1_fraction": 0.6094808126410836
+    }
+  ],
+  "spearman_d_vs_max_error": 0.47640900944526116,
+  "spearman_d_vs_min_error": -0.005698369771515391,
+  "triangle_inequality_max_violation": 0.0,
+  "no_new_model_fits": true
+}

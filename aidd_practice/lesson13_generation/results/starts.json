@@ -1,0 +1,26 @@
+[
+  {
+    "index": 7062,
+    "smiles": "O=C(CCl)OCCn1c(=O)oc2cc3ncnc(Nc4ccc(Oc5cccc(C(F)(F)F)c5)c(Cl)c4)c3cc21"
+  },
+  {
+    "index": 6266,
+    "smiles": "COc1cc2c(Oc3ccc(NS(=O)(=O)c4cccc(-c5ccoc5)c4)cc3F)ccnc2cc1OCCCN1CCN(C)CC1"
+  },
+  {
+    "index": 2984,
+    "smiles": "CCOc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OC(=O)CCc1cccnc1"
+  },
+  {
+    "index": 7740,
+    "smiles": "CCN(CC)CCNC(=O)Nc1cc2c(Nc3ccc(F)c(Cl)c3)ncnc2cc1O[C@H]1CCOC1"
+  },
+  {
+    "index": 4798,
+    "smiles": "C=CC(=O)N1CCC(C2CCNc3c(C(N)=O)c(-c4ccc(Oc5ccccc5)c(O)c4)nn32)CC1"
+  },
+  {
+    "index": 8264,
+    "smiles": "C=CC(=O)Nc1cc2c(Oc3ccc(NC(=O)NCCc4csc(Br)c4)cc3F)ncnc2cc1OC"
+  }
+]

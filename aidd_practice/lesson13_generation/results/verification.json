@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "trajectories": 36,
+  "proposal_slots": 2880,
+  "states": 396,
+  "unique_evaluated_molecules": 2512,
+  "successful_actions_reconstructed": 2880,
+  "reference_similarity_spotchecks": 40,
+  "scaffold_partitions_disjoint": true,
+  "oracle_matches_lesson12": 1.2434497875801753e-14,
+  "greedy_choices_verified": true,
+  "generated_labels_not_used": true,
+  "images": 9,
+  "publication_links_wechat_only": true,
+  "html_browser_rendered": false
+}

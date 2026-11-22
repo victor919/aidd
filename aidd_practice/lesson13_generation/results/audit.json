@@ -1,0 +1,76 @@
+{
+  "config": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "start_count": 6,
+    "rounds": 10,
+    "proposals_per_round": 8,
+    "max_attempts_per_round": 160,
+    "max_heavy_atoms": 80,
+    "min_heavy_atoms": 8,
+    "oracle_seed": 42,
+    "rf_trees": 500,
+    "reference": "lesson12 fitting pool only (7148)",
+    "selection_A": "uniform among current and 8 proposals",
+    "selection_B": "maximum RF prediction among current and 8 proposals; retain current on ties",
+    "protocol": "Fixed initial protocol before running search. No tuning from generated results. Exploratory retrospective demonstration, no experimental generated labels. Equal logical prediction requests, actual uncached model evaluations separately counted."
+  },
+  "config_sha256": "8e993dc290e1a4992ea537591fc7fd3160464f437024729889ed1ff96789f6e8",
+  "input_sha256": {
+    "split_indices.json": "fbe2ca06699697bac5c8f4911e76edbf9eb47119956ffd5891d59185d6364182",
+    "X_ecfp.npy": "ddc15176d3451276e3daeb4dec0e501d5c9b68c790766410a92da797df3e11d9",
+    "dataset_with_scaffold.csv": "0757f509f86fcf7d471db7d3d5d68dc448f7a8998ebf80e3d94c45ba1a092d2c",
+    "lesson12_predictions.csv": "b118ce9a405b823c56d5aac7505ec94d02999a0f90695a0af31920908992b15a"
+  },
+  "gnn_sha256": "e55bd42c54514552ab36241d263c10ddb71886f6d67bfe5c17911cfd188a3710",
+  "n_fit": 7148,
+  "n_validation": 1550,
+  "n_test": 1770,
+  "rf_reload_prediction_maxdiff": 1.2434497875801753e-14,
+  "fragment_pool_size": 1443,
+  "fragment_pool_label_counts": {
+    "1": 76,
+    "3": 11,
+    "4": 115,
+    "5": 106,
+    "6": 15,
+    "7": 46,
+    "8": 65,
+    "9": 30,
+    "10": 17,
+    "11": 5,
+    "12": 17,
+    "13": 55,
+    "14": 275,
+    "15": 111,
+    "16": 499
+  },
+  "starts": [
+    7062,
+    6266,
+    2984,
+    7740,
+    4798,
+    8264
+  ],
+  "trajectories": 36,
+  "logical_prediction_requests_including_starts": 2898,
+  "unique_rf_evaluations": 2512,
+  "search_proposal_slots": 2880,
+  "attempts": 3049,
+  "seconds": 202.91627097129822,
+  "environment": {
+    "python": "3.11.14",
+    "platform": "macOS-26.5-arm64-arm-64bit"
+  },
+  "limitations": [
+    "No experimental labels for generated candidates",
+    "Only one oracle, one local action family and six fitting-pool starts",
+    "Historical test is diagnostic only, not external prospective validation",
+    "No similarity threshold, docking or ADMET model used in selection",
+    "SA and QED are descriptors, not synthesis routes or ADMET evidence"
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "attachment_hash": "a006537f7cb7863096d48036e81ccf880dff96f45dbca0cc89d35ca22abad255",
+  "attachment_runs": 27,
+  "attachment_design": {
+    "query_budget": 400,
+    "beam": 5,
+    "per_beam": 10,
+    "rounds": 8,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "n_starts": 3,
+    "ad_floor": 0.4,
+    "budget_unit": "oracle 查询次数（新唯一有效候选才计费；重复走缓存）",
+    "note": "A/B/C 同起点、同提议函数、同每轮候选数、同基本检查；只改保留规则"
+  },
+  "fit_sets_match": false,
+  "historical_diagnostic_RF_MAE": 0.6015,
+  "historical_diagnostic_GNN_MAE": 0.6578,
+  "gnn_in_source_code": "300 hidden; trained on outer scaffold train (8698), while primary article uses 128 hidden/7148 fitting",
+  "runs": [
+    {
+      "seed": 42,
+      "start": 0,
+      "arm": "A",
+      "rounds": 8,
+      "last_queries": 215
+    },
+    {
+      "seed": 42,
+      "start": 0,
+      "arm": "B",
+      "rounds": 8,
+      "last_queries": 185
+    },
+    {
+      "seed": 42,
+      "start": 0,
+      "arm": "C",
+      "rounds": 1,
+      "last_queries": 0
+    },
+    {
+      "seed": 42,
+      "start": 1,
+      "arm": "A",
+      "rounds": 8,
+      "last_queries": 193
+    },
+    {
+      "seed": 42,
+      "start": 1,
+      "arm": "B",
+      "rounds": 8,
+      "last_queries": 196
+    },
+    {
+      "seed": 42,
+      "start": 1,
+      "arm": "C",
+      "rounds": 8,
+      "last_queries": 103
+    },
+    {
+      "seed": 42,
+      "start": 2,
+      "arm": "A",
+      "rounds": 8,
+      "last_queries": 204
+    },
+    {
+      "seed": 42,
+      "start": 2,
+      "arm": "B",
+      "rounds": 8,
+      "last_queries": 258
+    },
+    {
+      "seed": 42,
+      "start": 2,
+      "arm": "C",
+      "rounds": 8,
+      "last_queries": 212
+    },
+    {
+      "seed": 43,
+      "start": 0,
+      "arm": "A",
+      "rounds": 8,
+      "last_queries": 147
+    },
+    {
+      "seed": 43,
+      "start": 0,
+      "arm": "B",
+      "rounds": 8,
+      "last_queries": 169
+    },
+    {
+      "seed": 43,
+      "start": 0,
+      "arm": "C",
+      "rounds": 8,
+      "last_queries": 138
+    },
+    {
+      "seed": 43,
+      "start": 1,
+      "arm": "A",
+      "rounds": 8,
+      "last_queries": 135
+    },
+    {
+      "seed": 43,
+      "start": 1,
+      "arm": "B",
+      "rounds": 8,
+      "last_queries": 142
+    },
+    {
+      "seed": 43,
+      "start": 1,
+      "arm": "C",
+      "rounds": 8,
+      "last_queries": 112
+    },
+    {
+      "seed": 43,
+      "start": 2,
+      "arm": "A",
+      "rounds": 8,
+      "last_queries": 144
+    },
+    {
+      "seed": 43,
+      "start": 2,
+      "arm": "B",
+      "rounds": 8,
+      "last_queries": 165
+    },
+    {
+      "seed": 43,
+      "start": 2,
+      "arm": "C",
+      "rounds": 8,
+      "last_queries": 183
+    },
+    {
+      "seed": 44,
+      "start": 0,
+      "arm": "A",
+      "rounds": 8,
+      "last_queries": 129
+    },
+    {
+      "seed": 44,
+      "start": 0,
+      "arm": "B",
+      "rounds": 8,
+      "last_queries": 185
+    },
+    {
+      "seed": 44,
+      "start": 0,
+      "arm": "C",
+      "rounds": 8,
+      "last_queries": 119
+    },
+    {
+      "seed": 44,
+      "start": 1,
+      "arm": "A",
+      "rounds": 8,
+      "last_queries": 158
+    },
+    {
+      "seed": 44,
+      "start": 1,
+      "arm": "B",
+      "rounds": 8,
+      "last_queries": 152
+    },
+    {
+      "seed": 44,
+      "start": 1,
+      "arm": "C",
+      "rounds": 8,
+      "last_queries": 173
+    },
+    {
+      "seed": 44,
+      "start": 2,
+      "arm": "A",
+      "rounds": 8,
+      "last_queries": 144
+    },
+    {
+      "seed": 44,
+      "start": 2,
+      "arm": "B",
+      "rounds": 8,
+      "last_queries": 218
+    },
+    {
+      "seed": 44,
+      "start": 2,
+      "arm": "C",
+      "rounds": 8,
+      "last_queries": 163
+    }
+  ],
+  "actual_query_range": [
+    0,
+    258
+  ],
+  "saved_all_records": 1021,
+  "retained_candidate_count": 914,
+  "source_protocol_findings": [
+    "Budget stated as uncached oracle queries but loop stops after fixed rounds, not at equal uncached queries; cache is shared across arms/runs.",
+    "No round0 retained: first-to-last changes are not original-start-to-final changes.",
+    "BRICSDecompose uses unique fragment set then BRICSBuild picks first completed assembly; not guaranteed to preserve all untouched parent fragments.",
+    "Graph hidden dimension/training pool differ between primary main model and attachment diagnostic.",
+    "Canonicalization helper exists but raw SMILES sets are used in attachment identity audit.",
+    "No molecular-weight association alone proves a size shortcut or causal activity effect."
+  ],
+  "integration": "Retain primary two-arm matched-budget experiment; integrate narration and new diagnostics computed only from primary frozen predictions; do not merge numerical protocols."
+}
