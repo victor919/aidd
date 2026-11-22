@@ -1,0 +1,127 @@
+{
+  "test_set": {
+    "n": 1770,
+    "RF_MAE": 0.6015,
+    "GNN_MAE": 0.6578,
+    "gnn_better_frac": 0.4723,
+    "spearman_disagree_vs_rf_err": 0.1819,
+    "spearman_disagree_vs_max_err": 0.5124,
+    "spearman_disagree_vs_min_err": -0.0222,
+    "bins": [
+      {
+        "bin": "Q1 一致",
+        "n": 443,
+        "max_err_med": 0.3957,
+        "frac_max_err_gt1": 0.1467
+      },
+      {
+        "bin": "Q2",
+        "n": 442,
+        "max_err_med": 0.4986,
+        "frac_max_err_gt1": 0.1787
+      },
+      {
+        "bin": "Q3",
+        "n": 442,
+        "max_err_med": 0.6597,
+        "frac_max_err_gt1": 0.2602
+      },
+      {
+        "bin": "Q4 分歧",
+        "n": 443,
+        "max_err_med": 1.1344,
+        "frac_max_err_gt1": 0.5959
+      }
+    ],
+    "n_agree_but_both_wrong": 11,
+    "agree_but_both_wrong_top5": [
+      {
+        "true": 10.0,
+        "RF": 7.812,
+        "GNN": 7.743
+      },
+      {
+        "true": 8.699,
+        "RF": 5.296,
+        "GNN": 5.374
+      },
+      {
+        "true": 6.315,
+        "RF": 8.621,
+        "GNN": 8.581
+      },
+      {
+        "true": 5.744,
+        "RF": 8.355,
+        "GNN": 8.385
+      },
+      {
+        "true": 5.647,
+        "RF": 7.722,
+        "GNN": 7.946
+      }
+    ]
+  },
+  "generated": {
+    "n": 33,
+    "n_sampled": 33,
+    "disagree_median": 0.726,
+    "disagree_q90": 1.6503,
+    "frac_disagree_gt1": 0.4242,
+    "frac_nn_lt_05": 0.8182,
+    "spearman_disagree_vs_nn": -0.1323,
+    "note": "生成候选无实验标签：这里只报告分歧分布，不声称筛掉错误候选",
+    "top_disagree": [
+      {
+        "smiles": "COc1cc2c(NCC(C)(C)S(C)(=O)=O)ncnc2cc1N1CC2(CN(C)C2)OC1=O",
+        "RF": 7.1784,
+        "GNN": 9.5803,
+        "disagree": 2.4019,
+        "nn": 0.55,
+        "SA": 3.713,
+        "QED": 0.701,
+        "MW": 449.5
+      },
+      {
+        "smiles": "CN1CC2(C1)CN(c1cc3c(-c4cccc5cnc(Cl)cc45)ncnc3cc1-c1cccc3cnc(Cl)cc13)C(=O)O2",
+        "RF": 7.0479,
+        "GNN": 9.2311,
+        "disagree": 2.1832,
+        "nn": 0.4588,
+        "SA": 3.79,
+        "QED": 0.204,
+        "MW": 593.5
+      },
+      {
+        "smiles": "CN1CC2(C1)CN(c1cc3c(N4CC5(CN(C)C5)OC4=O)ncnc3cc1N1CCC(F)CC1)C(=O)O2",
+        "RF": 6.9228,
+        "GNN": 8.8476,
+        "disagree": 1.9248,
+        "nn": 0.4321,
+        "SA": 4.356,
+        "QED": 0.612,
+        "MW": 511.6
+      },
+      {
+        "smiles": "CN1CC2(C1)CN(c1cc3ncnc(N4CC5(CN(C)C5)OC4=O)c3cc1-c1cc(Cl)cc(C=O)c1)C(=O)O2",
+        "RF": 6.9279,
+        "GNN": 8.5786,
+        "disagree": 1.6507,
+        "nn": 0.407,
+        "SA": 4.321,
+        "QED": 0.454,
+        "MW": 549.0
+      },
+      {
+        "smiles": "CN1CC2(C1)CN(c1cc3c(N4CC5(CN(C)C5)OC4=O)ncnc3cc1CCCO)C(=O)O2",
+        "RF": 6.8631,
+        "GNN": 8.512,
+        "disagree": 1.6489,
+        "nn": 0.4198,
+        "SA": 4.271,
+        "QED": 0.682,
+        "MW": 468.5
+      }
+    ]
+  }
+}

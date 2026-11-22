@@ -1,0 +1,279 @@
+{
+  "design": {
+    "pool_per_start": 400,
+    "kept_per_start": 100,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "n_starts": 3,
+    "note": "离线排序：同池、同查询次数；A 随机保留、B 按 RF 预测保留；无状态更新，不称闭环爬山"
+  },
+  "runs": [
+    {
+      "seed": 42,
+      "start": 0,
+      "n_pool": 244,
+      "A": {
+        "n": 100,
+        "pred_med": 5.2874,
+        "nn_med": 0.3333,
+        "frac_nn_lt_05": 0.87,
+        "frac_nn_lt_04": 0.69,
+        "SA_med": 2.796,
+        "QED_med": 0.685,
+        "MW_med": 221.8,
+        "atoms_med": 16.0,
+        "diversity": 0.1273
+      },
+      "B": {
+        "n": 100,
+        "pred_med": 5.9676,
+        "nn_med": 0.3389,
+        "frac_nn_lt_05": 0.93,
+        "frac_nn_lt_04": 0.69,
+        "SA_med": 2.465,
+        "QED_med": 0.702,
+        "MW_med": 225.2,
+        "atoms_med": 17.0,
+        "diversity": 0.1603
+      }
+    },
+    {
+      "seed": 42,
+      "start": 1,
+      "n_pool": 205,
+      "A": {
+        "n": 100,
+        "pred_med": 5.7193,
+        "nn_med": 0.3529,
+        "frac_nn_lt_05": 0.84,
+        "frac_nn_lt_04": 0.63,
+        "SA_med": 2.568,
+        "QED_med": 0.71,
+        "MW_med": 339.0,
+        "atoms_med": 20.0,
+        "diversity": 0.1676
+      },
+      "B": {
+        "n": 100,
+        "pred_med": 6.0078,
+        "nn_med": 0.3103,
+        "frac_nn_lt_05": 0.94,
+        "frac_nn_lt_04": 0.73,
+        "SA_med": 2.844,
+        "QED_med": 0.657,
+        "MW_med": 424.6,
+        "atoms_med": 23.0,
+        "diversity": 0.2131
+      }
+    },
+    {
+      "seed": 42,
+      "start": 2,
+      "n_pool": 253,
+      "A": {
+        "n": 100,
+        "pred_med": 6.3071,
+        "nn_med": 0.3789,
+        "frac_nn_lt_05": 0.79,
+        "frac_nn_lt_04": 0.53,
+        "SA_med": 3.03,
+        "QED_med": 0.633,
+        "MW_med": 301.5,
+        "atoms_med": 21.5,
+        "diversity": 0.1734
+      },
+      "B": {
+        "n": 100,
+        "pred_med": 7.1685,
+        "nn_med": 0.4719,
+        "frac_nn_lt_05": 0.63,
+        "frac_nn_lt_04": 0.18,
+        "SA_med": 3.587,
+        "QED_med": 0.422,
+        "MW_med": 489.9,
+        "atoms_med": 34.0,
+        "diversity": 0.3411
+      }
+    },
+    {
+      "seed": 43,
+      "start": 0,
+      "n_pool": 230,
+      "A": {
+        "n": 100,
+        "pred_med": 5.3767,
+        "nn_med": 0.3246,
+        "frac_nn_lt_05": 0.92,
+        "frac_nn_lt_04": 0.73,
+        "SA_med": 2.738,
+        "QED_med": 0.714,
+        "MW_med": 223.3,
+        "atoms_med": 16.0,
+        "diversity": 0.1366
+      },
+      "B": {
+        "n": 100,
+        "pred_med": 5.8388,
+        "nn_med": 0.3273,
+        "frac_nn_lt_05": 0.89,
+        "frac_nn_lt_04": 0.74,
+        "SA_med": 2.398,
+        "QED_med": 0.723,
+        "MW_med": 239.8,
+        "atoms_med": 17.0,
+        "diversity": 0.1542
+      }
+    },
+    {
+      "seed": 43,
+      "start": 1,
+      "n_pool": 211,
+      "A": {
+        "n": 100,
+        "pred_med": 5.678,
+        "nn_med": 0.3552,
+        "frac_nn_lt_05": 0.82,
+        "frac_nn_lt_04": 0.65,
+        "SA_med": 2.53,
+        "QED_med": 0.657,
+        "MW_med": 352.3,
+        "atoms_med": 21.0,
+        "diversity": 0.1509
+      },
+      "B": {
+        "n": 100,
+        "pred_med": 6.029,
+        "nn_med": 0.3153,
+        "frac_nn_lt_05": 0.86,
+        "frac_nn_lt_04": 0.72,
+        "SA_med": 2.825,
+        "QED_med": 0.563,
+        "MW_med": 419.4,
+        "atoms_med": 24.0,
+        "diversity": 0.2127
+      }
+    },
+    {
+      "seed": 43,
+      "start": 2,
+      "n_pool": 251,
+      "A": {
+        "n": 100,
+        "pred_med": 6.7763,
+        "nn_med": 0.4111,
+        "frac_nn_lt_05": 0.78,
+        "frac_nn_lt_04": 0.42,
+        "SA_med": 3.263,
+        "QED_med": 0.567,
+        "MW_med": 362.1,
+        "atoms_med": 26.0,
+        "diversity": 0.2063
+      },
+      "B": {
+        "n": 100,
+        "pred_med": 7.4172,
+        "nn_med": 0.474,
+        "frac_nn_lt_05": 0.62,
+        "frac_nn_lt_04": 0.2,
+        "SA_med": 3.548,
+        "QED_med": 0.371,
+        "MW_med": 513.7,
+        "atoms_med": 35.0,
+        "diversity": 0.3595
+      }
+    },
+    {
+      "seed": 44,
+      "start": 0,
+      "n_pool": 250,
+      "A": {
+        "n": 100,
+        "pred_med": 5.4385,
+        "nn_med": 0.3246,
+        "frac_nn_lt_05": 0.87,
+        "frac_nn_lt_04": 0.64,
+        "SA_med": 2.821,
+        "QED_med": 0.718,
+        "MW_med": 216.8,
+        "atoms_med": 16.0,
+        "diversity": 0.1352
+      },
+      "B": {
+        "n": 100,
+        "pred_med": 6.0301,
+        "nn_med": 0.3953,
+        "frac_nn_lt_05": 0.88,
+        "frac_nn_lt_04": 0.51,
+        "SA_med": 2.693,
+        "QED_med": 0.706,
+        "MW_med": 261.0,
+        "atoms_med": 18.0,
+        "diversity": 0.15
+      }
+    },
+    {
+      "seed": 44,
+      "start": 1,
+      "n_pool": 194,
+      "A": {
+        "n": 100,
+        "pred_med": 5.7962,
+        "nn_med": 0.3225,
+        "frac_nn_lt_05": 0.86,
+        "frac_nn_lt_04": 0.66,
+        "SA_med": 2.57,
+        "QED_med": 0.667,
+        "MW_med": 335.5,
+        "atoms_med": 20.0,
+        "diversity": 0.1534
+      },
+      "B": {
+        "n": 100,
+        "pred_med": 5.9931,
+        "nn_med": 0.3203,
+        "frac_nn_lt_05": 0.92,
+        "frac_nn_lt_04": 0.74,
+        "SA_med": 2.662,
+        "QED_med": 0.585,
+        "MW_med": 400.6,
+        "atoms_med": 23.0,
+        "diversity": 0.2038
+      }
+    },
+    {
+      "seed": 44,
+      "start": 2,
+      "n_pool": 251,
+      "A": {
+        "n": 100,
+        "pred_med": 6.5422,
+        "nn_med": 0.4103,
+        "frac_nn_lt_05": 0.73,
+        "frac_nn_lt_04": 0.46,
+        "SA_med": 2.99,
+        "QED_med": 0.553,
+        "MW_med": 356.8,
+        "atoms_med": 26.0,
+        "diversity": 0.1836
+      },
+      "B": {
+        "n": 100,
+        "pred_med": 7.3522,
+        "nn_med": 0.489,
+        "frac_nn_lt_05": 0.54,
+        "frac_nn_lt_04": 0.13,
+        "SA_med": 3.551,
+        "QED_med": 0.386,
+        "MW_med": 500.4,
+        "atoms_med": 35.0,
+        "diversity": 0.3627
+      }
+    }
+  ],
+  "queries_total": 1924,
+  "cache_hits": 165,
+  "invalid_proposals": 163
+}
