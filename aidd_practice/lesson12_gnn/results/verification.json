@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "model_fits_checked": 24,
+  "images_checked": 11,
+  "metric_recomputations_match": true,
+  "metric_recompute_tolerance": 1e-06,
+  "nested_subsets_verified": true,
+  "all_three_partitions_scaffold_disjoint": true,
+  "gnn_reload_max_abs_difference": 4.237060551304239e-07,
+  "attachment_snapshot_checks": 16,
+  "attachment_scale_reconstruction_verified": true,
+  "paired_bootstrap_centers_verified": true,
+  "case_readout_verified": true,
+  "html_reference_check": true,
+  "html_browser_rendered": false,
+  "note": "HTML结构与PNG解码已检查；整页浏览器渲染未完成。"
+}

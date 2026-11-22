@@ -1,0 +1,50 @@
+{
+  "n_total": 10468,
+  "n_fit": 7148,
+  "n_validation": 1550,
+  "n_test": 1770,
+  "graph_shapes": {
+    "atoms": [
+      29,
+      72
+    ],
+    "directed_bonds": [
+      62,
+      14
+    ]
+  },
+  "erlotinib_smiles": "C#Cc1cccc(Nc2ncnc3cc(OCCOC)c(OCCOC)cc23)c1",
+  "chirality": {
+    "fingerprint_tanimoto": {
+      "False": 1.0,
+      "True": 0.75
+    },
+    "chemprop_atom_features_equal": false
+  },
+  "environment": {
+    "python": "3.11.14",
+    "platform": "macOS-26.5-arm64-arm-64bit",
+    "device": "cpu",
+    "mps_available": false,
+    "cuda_available": false
+  },
+  "versions": {
+    "chemprop": "2.3.1",
+    "torch": "2.13.0",
+    "lightning": "2.6.5",
+    "rdkit": "2026.3.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.0",
+    "matplotlib": "3.11.1"
+  },
+  "inputs_sha256": {
+    "08_chemprop.json": "49d84990677a7cf000b5d8835cec591fe86469c9d9684c205a4bfe4d78b24dd8",
+    "split_indices.json": "fbe2ca06699697bac5c8f4911e76edbf9eb47119956ffd5891d59185d6364182",
+    "X_ecfp.npy": "ddc15176d3451276e3daeb4dec0e501d5c9b68c790766410a92da797df3e11d9",
+    "dataset_with_scaffold.csv": "0757f509f86fcf7d471db7d3d5d68dc448f7a8998ebf80e3d94c45ba1a092d2c"
+  },
+  "config_sha256": "7fa44469b53f1bdcba911a6b349e9a4cf5edf6cde0e41338ee82bae3d34e0453",
+  "protocol": "Fixed presets, no hyperparameter search. Same nested random subsets per seed for both models. Fixed scaffold-group validation and fixed scaffold test. GNN validation selects epoch only. No refit on validation. Historical test reused: retrospective benchmark, not external prospective validation."
+}

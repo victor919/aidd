@@ -1,0 +1,253 @@
+{
+  "source_snapshot_sha256": {
+    "results/pred_scaffold_rf_seed13.npz": "61d1ebd56a6f1697f7f3a3958bfa02ea1a11c6205c7cdcd2bfcf3f9dec30e5d9",
+    "results/pred_scaffold_gnn_seed42.npz": "12d6300c83c2df4af76627560cbeac9aaf37899ccb561f35a57802b7f2d75226",
+    "results/pred_random_gnn_seed13.npz": "ec04b5efc46de1736f64f30f9aad7eab30f060288d6ad434d60f0100c9234506",
+    "results/pred_random_rf_seed42.npz": "480866fa349a3459220b6526fc76dba078848cf2e6535d6a4ca1fb690242860e",
+    "results/g4_random.json": "bafee1064a339eca13c643e4d539c306bc6e84f49595003d034ce85d465e6f95",
+    "results/pred_scaffold_gnn_seed21.npz": "2a0dadc88dcbe606ba22e9aa7cbde51358143fd6e1387f0c779c1460e68c8620",
+    "results/pred_scaffold_rf_seed7.npz": "1b5f4c7d5e6836ec4f42daf9d4e8414418b3fa95883352f1600fc0d57901f1ad",
+    "results/pred_random_gnn_seed7.npz": "5418eba5e194e95f635e81e3ca26076270082f3de253e47c5b3710c6f48b485d",
+    "results/pred_scaffold_gnn_seed33.npz": "ff78575aa2f436dc5727ca48b7775cbb377f237715c8c52fd6516f70d11fc2c7",
+    "results/g2_learning_curve.json": "db67f87001be69789820fcfc5056eb4b5ba5f67c3c9f05b4e467ed5f5fe6ad2f",
+    "results/pred_random_rf_seed13.npz": "adafc965e107ce02de7bb28cfb13e687ae4ef328fd85bd39a82e6369a1a9dac1",
+    "results/pred_random_gnn_seed42.npz": "2c47929e570f665546323c4e2cb166fd04393ee4bc7ec594f2518cad0d4c1458",
+    "results/pred_scaffold_rf_seed42.npz": "e6fd68588c7c38b7145445ccfb540b0b9a428d8a8feb5eb740cd1dcca98c44fa",
+    "results/pred_random_rf_seed7.npz": "59fcca67fb9279eaa230518d6bc184d4dfba96c890c72e09e865508bb98ea1d4",
+    "results/g5_attribution.json": "604b06e7796efc11d8db15dcffaeb7b32257af74e06180f563b810e9e15faa47",
+    "results/pred_scaffold_gnn_seed13.npz": "427fb3583ebee8556df3f91dfd44706719b6904d2288aa83f3885dce1cee3859",
+    "results/pred_scaffold_rf_seed33.npz": "38efaac91c7009894420523b7b7cbbc01ad9f99153c6637feb4ca4ee4cb9b951",
+    "results/model_scaffold_gnn_seed42.pt": "30d027cfa725b8ba31e7d1f635e4bab68dd44aa9499fa83def61ac646bc27b5f",
+    "results/pred_scaffold_rf_seed21.npz": "8bbeaf8cad087a1c49aa96c64188e52f6ae854340e28e117f4f0b10d6cf65922",
+    "results/pred_scaffold_gnn_seed7.npz": "148327480808701707140a0c0a6df591c978278e0e371260b0e08d0497d5988e",
+    "results/g1_multiseed.json": "8e274084783e5f129595ae251c618c2f52280ffc3ea3a9a31ea568d8c95fb68f"
+  },
+  "scaffold_summary": {
+    "rf": {
+      "mean": 0.600934414334633,
+      "std_ddof1": 0.001793370793317349,
+      "min": 0.5994506818089677,
+      "max": 0.6038109101450653,
+      "n_seeds": 5
+    },
+    "gnn": {
+      "mean": 0.6451961947187342,
+      "std_ddof1": 0.008862757405655442,
+      "min": 0.6344963685258566,
+      "max": 0.657846030687211,
+      "n_seeds": 5
+    }
+  },
+  "random_snapshot_discrepancies": [],
+  "scaffold_npz_records_verified": 10,
+  "random_npz_records_examined": 6,
+  "separate_g4_repeat_records": [
+    {
+      "split": "random",
+      "model": "ECFP4+RF",
+      "seed": 42,
+      "sec": 108.3,
+      "n_params": null,
+      "MAE": 0.5095,
+      "RMSE": 0.7026,
+      "R2": 0.7319,
+      "rho": 0.86
+    },
+    {
+      "split": "random",
+      "model": "D-MPNN",
+      "seed": 42,
+      "sec": 485.0,
+      "sec_per_epoch": 9.7,
+      "n_params": 408601,
+      "MAE": 0.549,
+      "RMSE": 0.753,
+      "R2": 0.692,
+      "rho": 0.8395
+    },
+    {
+      "split": "random",
+      "model": "ECFP4+RF",
+      "seed": 7,
+      "sec": 74.0,
+      "n_params": null,
+      "MAE": 0.5093,
+      "RMSE": 0.7024,
+      "R2": 0.732,
+      "rho": 0.8603
+    },
+    {
+      "split": "random",
+      "model": "D-MPNN",
+      "seed": 7,
+      "sec": 444.8,
+      "sec_per_epoch": 8.9,
+      "n_params": 408601,
+      "MAE": 0.5395,
+      "RMSE": 0.7413,
+      "R2": 0.7016,
+      "rho": 0.8415
+    }
+  ],
+  "model_reload_max_abs_difference": 1.1665627326351569e-06,
+  "paired_cluster_bootstrap": {
+    "main_128dim_3seeds": {
+      "mean_delta_GNN_minus_RF": 0.1613606384383369,
+      "cluster_bootstrap95": [
+        0.12548474683078184,
+        0.19999857377139324
+      ],
+      "n_test": 1770,
+      "n_scaffold_clusters": 771,
+      "n_bootstrap": 2000,
+      "scope": "条件于当前测试集和已训练模型；先按种子平均成对绝对误差，再按骨架整组重抽样。不含重训/换划分波动，不是普遍优劣证明。"
+    },
+    "attachment_300dim_5seeds": {
+      "mean_delta_GNN_minus_RF": 0.04426178038410132,
+      "cluster_bootstrap95": [
+        0.008560920846542894,
+        0.07701709965902627
+      ],
+      "n_test": 1770,
+      "n_scaffold_clusters": 771,
+      "n_bootstrap": 2000,
+      "scope": "条件于当前测试集和已训练模型；先按种子平均成对绝对误差，再按骨架整组重抽样。不含重训/换划分波动，不是普遍优劣证明。"
+    }
+  },
+  "scaling_correction": {
+    "original_used_first_n": 200,
+    "correct_train_n": 8698,
+    "wrong_mean": 9.65140943447266,
+    "wrong_scale": 0.2916858812621914,
+    "correct_mean": 6.929859359988813,
+    "correct_scale": 1.350810873035771,
+    "molecules": [
+      {
+        "tag": "erlotinib",
+        "canonical_smiles": "C#Cc1cccc(Nc2ncnc3cc(OCCOC)c(OCCOC)cc23)c1",
+        "raw_string_found": false,
+        "canonical_dataset_indices": [
+          3880
+        ],
+        "in_outer_training": true,
+        "original_reported_prediction": 9.8224,
+        "wrong_scale_prediction_reproduced": 9.822449593818098,
+        "correct_scale_prediction": 7.721954287483465,
+        "correct_scale_masked_minus_full_deltas": [
+          0.39526727725156163,
+          0.10208623550899391,
+          -0.1672590218408516,
+          -0.22643564419964052,
+          -0.0888554319511079,
+          -0.34546158841898394,
+          -0.38218051431709377,
+          0.035513219729475486,
+          -0.34827211163958616,
+          -0.6444109076172883,
+          0.005782236674901064,
+          0.05608365391350757,
+          -0.4953369037754003,
+          -0.25241983998139467,
+          -0.6680433523820382,
+          -0.2939521703455791,
+          -0.49839074212399004,
+          -0.2508408278594466,
+          -0.37412808791726354,
+          -0.9805169911207164,
+          -0.44976145214482915,
+          0.05170712167921999,
+          -0.07786124352901443,
+          -0.25422996926909,
+          -0.3394319303713808,
+          -0.18507601765727388,
+          -0.12608393476683286,
+          0.10208631602359616,
+          0.39526727725156163
+        ],
+        "scale_correction_factor": 4.631046477774324
+      },
+      {
+        "tag": "test_high",
+        "canonical_smiles": "Cn1cnc2cc3c(Nc4cccc(Br)c4)ncnc3cc21",
+        "raw_string_found": true,
+        "canonical_dataset_indices": [
+          1
+        ],
+        "in_outer_training": false,
+        "original_reported_prediction": 10.1345,
+        "wrong_scale_prediction_reproduced": 10.134487748846489,
+        "correct_scale_prediction": 9.167017486258896,
+        "correct_scale_masked_minus_full_deltas": [
+          -0.10050186916599649,
+          -0.2660078465721452,
+          -0.8789809722748213,
+          -0.5481529128140538,
+          -0.0784877276490908,
+          -0.05403495985935728,
+          -0.04515274996877947,
+          -0.010897490384795996,
+          -0.6389542216722438,
+          -0.2967831040178507,
+          -0.6293786200271231,
+          -0.5425994986387359,
+          -1.0244215835968273,
+          -0.2109284512924524,
+          -0.6253176245190377,
+          -0.5941183771779047,
+          -0.25566622900125585,
+          -1.0938903875607264,
+          -0.2463018976724288,
+          -0.21018353019247213,
+          -0.3371271998820881,
+          -0.3039653285966058
+        ],
+        "scale_correction_factor": 4.631046477774324
+      },
+      {
+        "tag": "test_low",
+        "canonical_smiles": "CN(c1cccnc1)c1cc2c(Nc3ccc(F)c(Cl)c3)c(C#N)cnc2cn1",
+        "raw_string_found": true,
+        "canonical_dataset_indices": [
+          10464
+        ],
+        "in_outer_training": false,
+        "original_reported_prediction": 9.5517,
+        "wrong_scale_prediction_reproduced": 9.551691127074783,
+        "correct_scale_prediction": 6.468059243744254,
+        "correct_scale_masked_minus_full_deltas": [
+          -0.49542800604784165,
+          -0.2983628810285201,
+          -0.2598446953140182,
+          0.4046865597964216,
+          1.3333220547381037,
+          0.8363664853991492,
+          -0.14759961038123337,
+          -0.467066173804461,
+          -0.2915916029796288,
+          -0.9200890711997713,
+          -0.24850550182130046,
+          -0.19958168942712357,
+          -0.40715074945546254,
+          -0.38295442067388263,
+          0.11058696721413003,
+          0.5134386898042921,
+          0.1676992756859329,
+          0.06159930674037203,
+          -0.02251558645969398,
+          0.2080096158031787,
+          -0.010390811992861715,
+          0.29697150818710644,
+          -0.06594230464282413,
+          0.7493094477324591,
+          0.8431964183357766,
+          -0.11396197831107921,
+          0.1774407776689815,
+          -0.9553411015595606,
+          -0.7891555809104555
+        ],
+        "scale_correction_factor": 4.631046477774324
+      }
+    ]
+  },
+  "source_learning_curve_status": "Only JSON metrics and code supplied; no per-molecule predictions for g2. Do not mix single-seed attachment curve with main three-seed learning curve."
+}

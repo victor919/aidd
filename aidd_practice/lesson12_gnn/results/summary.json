@@ -1,0 +1,169 @@
+{
+  "statistics": [
+    {
+      "n_train": 500,
+      "model": "GNN",
+      "MAE_mean": 1.0081924118719419,
+      "MAE_std": 0.018735503158772322,
+      "RMSE_mean": 1.2651081755449454,
+      "RMSE_std": 0.0057389103842246,
+      "R2_mean": 0.12245217197699654,
+      "R2_std": 0.007970797432850682,
+      "spearman_mean": 0.3632551487527252,
+      "spearman_std": 0.01816316214254319,
+      "fit_seconds_mean": 55.108849333327576,
+      "fit_seconds_std": 2.2914642073888376
+    },
+    {
+      "n_train": 500,
+      "model": "RF",
+      "MAE_mean": 0.8592554287851839,
+      "MAE_std": 0.014333109324779564,
+      "RMSE_mean": 1.1249787930149555,
+      "RMSE_std": 0.014096884441621872,
+      "R2_mean": 0.3060252896881769,
+      "R2_std": 0.017436621604699536,
+      "spearman_mean": 0.5615582033465084,
+      "spearman_std": 0.028250453477505523,
+      "fit_seconds_mean": 3.328150417015422,
+      "fit_seconds_std": 0.47179624538133225
+    },
+    {
+      "n_train": 2000,
+      "model": "GNN",
+      "MAE_mean": 0.8832277825206578,
+      "MAE_std": 0.01398730856884582,
+      "RMSE_mean": 1.1322851062115957,
+      "RMSE_std": 0.016481420951813534,
+      "R2_mean": 0.29695610367007225,
+      "R2_std": 0.02053457821870203,
+      "spearman_mean": 0.543605195485258,
+      "spearman_std": 0.009786383409229906,
+      "fit_seconds_mean": 146.5329607639966,
+      "fit_seconds_std": 26.154661334461466
+    },
+    {
+      "n_train": 2000,
+      "model": "RF",
+      "MAE_mean": 0.7624467771397067,
+      "MAE_std": 0.008770661942496009,
+      "RMSE_mean": 1.0040308331600156,
+      "RMSE_std": 0.0133830349435745,
+      "R2_mean": 0.4472165261104113,
+      "R2_std": 0.014777497004751037,
+      "spearman_mean": 0.6753753799546817,
+      "spearman_std": 0.011604870113868038,
+      "fit_seconds_mean": 15.946915652990961,
+      "fit_seconds_std": 0.2539564127551613
+    },
+    {
+      "n_train": 5000,
+      "model": "GNN",
+      "MAE_mean": 0.8142466252684946,
+      "MAE_std": 0.006616918564999621,
+      "RMSE_mean": 1.0748037701742874,
+      "RMSE_std": 0.005524891557122174,
+      "R2_mean": 0.3666036946047098,
+      "R2_std": 0.0065169352961622585,
+      "spearman_mean": 0.6142027175309305,
+      "spearman_std": 0.004111519466429209,
+      "fit_seconds_mean": 257.20929043066764,
+      "fit_seconds_std": 11.250007654138717
+    },
+    {
+      "n_train": 5000,
+      "model": "RF",
+      "MAE_mean": 0.668522154053449,
+      "MAE_std": 0.003677172355118675,
+      "RMSE_mean": 0.8956230030094421,
+      "RMSE_std": 0.002278421323548157,
+      "R2_mean": 0.5601932751195126,
+      "R2_std": 0.002238358403018564,
+      "spearman_mean": 0.7555734067466108,
+      "spearman_std": 0.0025104027636574976,
+      "fit_seconds_mean": 101.147081249995,
+      "fit_seconds_std": 38.776916095653576
+    },
+    {
+      "n_train": 7148,
+      "model": "GNN",
+      "MAE_mean": 0.7947917336722986,
+      "MAE_std": 0.01415782983311926,
+      "RMSE_mean": 1.0560360067628876,
+      "RMSE_std": 0.010872225885837476,
+      "R2_mean": 0.38849832244221383,
+      "R2_std": 0.012626862287052685,
+      "spearman_mean": 0.6377126489829453,
+      "spearman_std": 0.010993934673699555,
+      "fit_seconds_mean": 389.03577524999855,
+      "fit_seconds_std": 40.48114440443473
+    },
+    {
+      "n_train": 7148,
+      "model": "RF",
+      "MAE_mean": 0.633431093777229,
+      "MAE_std": 0.001240799523521629,
+      "RMSE_mean": 0.8630313750230411,
+      "RMSE_std": 0.0014253669360876657,
+      "R2_mean": 0.5916209335744721,
+      "R2_std": 0.0013493771055877249,
+      "spearman_mean": 0.7755152604246939,
+      "spearman_std": 0.0007192278234992256,
+      "fit_seconds_mean": 115.02915537533893,
+      "fit_seconds_std": 46.84030732510458
+    }
+  ],
+  "full_seed_paired_delta_GNN_minus_RF": {
+    "42": 0.15918591716395325,
+    "43": 0.14919510358682753,
+    "44": 0.1757008989344283
+  },
+  "test_n": 1770,
+  "fit_pool_n": 7148,
+  "val_n": 1550,
+  "completed_fits": 24,
+  "seed42_fraction_GNN_lower_abs_error": 0.3870056497175141,
+  "cases": [
+    {
+      "rule": "GNN误差优势最大",
+      "index": 1465,
+      "smiles": "C=CC(=O)NC1=CC=C2N=CN=C(Nc3ccc(OCc4ccccc4)cc3)C21",
+      "true": 8.439973751087107,
+      "RF": 6.136940660428928,
+      "GNN": 8.281548,
+      "RF_abs_error": 2.3030330906581797,
+      "GNN_abs_error": 0.15842575108710655
+    },
+    {
+      "rule": "RF误差优势最大",
+      "index": 10406,
+      "smiles": "C=CC(=O)Nc1cc(Nc2ncc(Cl)c(-c3cnn4ccccc34)n2)c(OC)cc1N1CCN(C(=O)N2CCNCC2)CC1",
+      "true": 3.607303046740334,
+      "RF": 4.036090654089564,
+      "GNN": 6.1108055,
+      "RF_abs_error": 0.4287876073492294,
+      "GNN_abs_error": 2.5035024532596655
+    },
+    {
+      "rule": "两者都较好",
+      "index": 8529,
+      "smiles": "c1ccc(C2=NN(c3ccccc3)C(c3cccc4ccccc34)C2)cc1",
+      "true": 5.598599459218455,
+      "RF": 5.6080265915899785,
+      "GNN": 5.607302,
+      "RF_abs_error": 0.00942713237152315,
+      "GNN_abs_error": 0.008702540781544421
+    },
+    {
+      "rule": "两者共同困难",
+      "index": 103,
+      "smiles": "CCOc1ccc(C2C(C#N)=C(N)OC3C2C(C)=NN3c2ccc(Cl)cc2)cc1",
+      "true": 9.67778070526608,
+      "RF": 5.5714893856449414,
+      "GNN": 5.1145186,
+      "RF_abs_error": 4.106291319621139,
+      "GNN_abs_error": 4.56326210526608
+    }
+  ],
+  "uncertainty_scope": "Sample SD over 3 seeds; fixed scaffold split. Includes subset sampling and initialization, not scaffold-split variability."
+}

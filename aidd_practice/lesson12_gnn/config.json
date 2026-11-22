@@ -1,0 +1,36 @@
+{
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "sizes": [
+    500,
+    2000,
+    5000,
+    "full"
+  ],
+  "validation_fraction_groups": 0.2,
+  "validation_seed": 42,
+  "rf": {
+    "n_estimators": 500,
+    "max_features": 1.0,
+    "min_samples_leaf": 1,
+    "n_jobs": 4
+  },
+  "gnn": {
+    "depth": 3,
+    "hidden_dim": 128,
+    "ffn_layers": 2,
+    "dropout": 0.05,
+    "batch_size": 128,
+    "max_epochs": 50,
+    "patience": 8,
+    "min_epochs": 10,
+    "init_lr": 0.0001,
+    "max_lr": 0.001,
+    "final_lr": 0.0001,
+    "threads": 1
+  },
+  "protocol": "Fixed presets, no hyperparameter search. Same nested random subsets per seed for both models. Fixed scaffold-group validation and fixed scaffold test. GNN validation selects epoch only. No refit on validation. Historical test reused: retrospective benchmark, not external prospective validation."
+}
